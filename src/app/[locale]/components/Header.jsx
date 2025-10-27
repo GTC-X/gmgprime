@@ -1,5 +1,5 @@
 // "use client"
-// import { Link, useRouter } from "@/i18n/navigation"
+// import { Link, useRouter } from "../../../i18n/navigation"
 
 // const CommonHeader = () => {
 //     const router = useRouter();
@@ -30,7 +30,7 @@
 
 "use client";
 
-import { Link, useRouter, usePathname } from "@/i18n/navigation";
+import { Link, useRouter, usePathname } from "../../../i18n/navigation";
 import { useEffect, useState } from "react";
 
 const IB_PORTAL_URL = "https://mygtcfx.com";                  // TODO: confirm

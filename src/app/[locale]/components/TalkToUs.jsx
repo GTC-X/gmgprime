@@ -4,7 +4,7 @@ import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { useRouter } from "@/i18n/navigation";
+import { useRouter } from "../../../i18n/navigation";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { useLocationDetail } from "../context/useLocationDetail";
