@@ -1,5 +1,5 @@
 "use client"
-import { useRouter } from "@/i18n/navigation";
+import { useRouter } from "../../../../i18n/navigation";
 import React from "react";
 // import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
