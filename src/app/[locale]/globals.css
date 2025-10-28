@@ -3,7 +3,7 @@
 @import "swiper/css/navigation";
 @import "swiper/css/pagination";
 :root {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif; 
   /* custom vars/classes referenced in your HTML */
 }
 @theme {
