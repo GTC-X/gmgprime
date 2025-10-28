@@ -12,23 +12,25 @@ import Awards from "./components/sections/Awards";
 import CTA from "./components/sections/CTA";
 import Discover from "./components/sections/Discover";
 import Footer from "./components/Footer";
+import WhoWeAre from "../about-us/components/WhoWeAre";
 // import LegalRisk from "@/components/sections/LegalRisk";
 
 export default function Page() {
     return (
         <>
-            <Header />
-            <MobileNav />
-            <main>
+            <div className=" relative">
+                <Header />
+                <MobileNav />
                 <Hero />
-                 <PrimeServices />
-                <Rostro />
-       
-                <ExploreSolutions />
-                {/* <PlatformEcosystem />
+            </div>
+            <WhoWeAre />
+            <PrimeServices />
+            <Rostro />
+
+            <ExploreSolutions />
+            {/* <PlatformEcosystem />
                 <Awards />
                 <CTA /> */}
-            </main>
             {/* <Discover />
             <LegalRisk /> */}
             <Footer />

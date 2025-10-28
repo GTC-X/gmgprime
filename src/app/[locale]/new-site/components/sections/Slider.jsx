@@ -253,7 +253,7 @@ export default function FeatureSlider({
           {items.map((item, i) => (
             <SwiperSlide key={i} className="!h-auto">
               <div className="h-full p-4 md:p-6">
-                <div className="rounded-xl bg-[#081c2e]/90 border border-white/10 p-6 h-full flex flex-col gap-4">
+                <div className="rounded-xl bg-transparent border border-white/50 p-6 h-full flex flex-col gap-4">
                   <div className="flex items-center flex-col text-center gap-3">
                     <div className="w-12 h-12 rounded-full grid place-items-center shrink-0">
                       <Image

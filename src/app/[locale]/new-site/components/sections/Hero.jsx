@@ -36,12 +36,21 @@ export default function Hero() {
     },
   ];
   return (
-    <section className="py-20 xl:py-28 relative  flex min-h-[900px] items-center overflow-hidden  bg-cover bg-center bg-no-repeat">
-      <div className="container">
+    <section className="py-16 xl:py-16  flex min-h-[900px] items-center overflow-hidden  bg-cover bg-center bg-no-repeat">
+      <div
+        className="pointer-events-none hidden md:block absolute right-0 top-0 h-full w-full"
+        style={{
+          backgroundImage: "url('/new/bg-new1.png')",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center right",
+        }}
+      />
+      <div className="container relative">
         <h1 className="text-[48px] mb-4 text-center font-bold md:text-[60px] leading-[72px]">
           Prime liquidity for growing brokers
         </h1>
-        <p className="font-sofia font-normal text-base lg:text-lg/[1.625rem] mb-6 text-center text-neutral-400">
+        <p className="font-sofia font-normal text-base lg:text-lg/[1.625rem] mb-6 text-center text-white">
           Institutional pricing that fits your stage.
           Fast integration, transparent terms, and support that helps you ship.
         </p>
@@ -73,7 +82,7 @@ export default function Hero() {
           </button>
         </div>
 
-        <div className="  max-w-5xl py-6 text-center mx-auto text-neutral-400">
+        <div className="  max-w-5xl py-10 text-center mx-auto text-white">
           <p className="text-[16px] text-primary leading-relaxed font-semibold pt-2">
             Authorised and regulated by the FCA. FRN 744501.<br />
           </p>
