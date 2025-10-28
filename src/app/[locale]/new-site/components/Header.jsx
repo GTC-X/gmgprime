@@ -10,12 +10,12 @@ export default function Header() {
     <header className="container relative z-50 flex items-center pt-4">
       <div className="flex-1 justify-between text-white xl:self-center">
         <Link href="/">
-          <Image src="/new/logo.svg"
-            alt="Scope Prime" width={222} height={28} />
+          <Image src="/new/new-logo.svg" className=" h-12"
+            alt="Scope Prime" width={222} height={20} />
         </Link>
       </div>
 
-      <nav className="hidden grow xl:block">
+      <nav className="hidden grow md:block">
         <ul className="flex justify-center gap-x-12">
           {[
             ["About Us", "/about-us"],
