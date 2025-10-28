@@ -6,7 +6,7 @@ export default function Rostro() {
       <div className="container">
         <div className="overflow-hidden rounded-2xl p-px bg-gradient-to-r from-[#265B9F] via-primary-800 to-accent-400">
           <div className="h-full rounded-2xl bg-primary-950 bg-gradient-to-r from-primary-800 via-primary-800 to-primary-800 p-10 xl:p-16">
-            <div className="flex flex-col xl:flex-row gap-12">
+            <div className="  flex gap-12">
               <div className="my-4 shrink-0 xl:my-0 xl:self-center">
                 <Image src="/new/laptop-img.svg" alt="Rostro" width={120} height={100} />
               </div>

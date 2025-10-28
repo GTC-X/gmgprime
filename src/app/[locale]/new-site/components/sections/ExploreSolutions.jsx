@@ -240,8 +240,8 @@ export default function HighlightsLanding() {
 
 function CardGradient({ children }) {
   return (
-    <div className="overflow-hidden rounded-2xl p-px bg-[linear-gradient(66deg,var(--tw-gradient-stops))] from-accent-400 via-sky-blue-500 to-sky-blue-600">
-      <div className="rounded-2xl bg-primary-950 bg-[radial-gradient(ellipse_at_bottom_right,var(--tw-gradient-stops))] from-sky-blue-400/25 via-primary-800 to-primary-800 p-6 xl:p-10">
+    <div className="overflow-hidden rounded-2xl p-px bg-gradient-to-r from-accent-400 via-sky-blue-500 to-sky-blue-600">
+      <div className="rounded-2xl bg-primary-950 bg-gradient-to-r from-sky-blue-400/25 via-primary-800 to-primary-800 p-6 xl:p-10">
         {children}
       </div>
     </div>

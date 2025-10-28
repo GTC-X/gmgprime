@@ -5,7 +5,7 @@ export default function FeatureLinks() {
   return (
     <section className="py-20 xl:py-28 !py-0  ">
       <div className="container">
-        <div class=" grid grid-cols-3 flex-wrap gap-6 mb-24">
+        <div class=" grid md:grid-cols-6 grid-cols-2 flex-wrap gap-6 mb-24 border  border-accent-400 rounded-2xl">
           {[
             { src: "/new/icon1.svg", text: "Right-sized liquidity designed for institutional quality with entry-friendly terms." },
             { src: "/new/icon2.svg", text: "Transparent pricing simple commissions or markup with no platform surprises." },
@@ -15,7 +15,7 @@ export default function FeatureLinks() {
             { src: "/new/icon6.svg", text: "Real-time TCA and reporting for full liquidity, costs and slippage checks." },
           ]?.map(single =>
 
-            <div class="flex-1 overflow-hidden rounded-2xl p-px bg-gradient-to-b from-[#265B9F] via-primary-800 to-accent-400">
+            <div class="flex-1 overflow-hidden rounded-2xl">
               <div class="h-full rounded-2xl bg-[#081c2e] p-6 flex flex-col items-start">
                 <img src={single?.src} alt="Indices" class="mb-4 w-12 h-12" />
                 <p class="font-sofia text-white text-lg leading-relaxed">{single?.text}</p>
