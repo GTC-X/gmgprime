@@ -3,6 +3,8 @@ import { ToastContainer } from "react-toastify";
  import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '../../i18n/routing';
+import Footer from "../components/Footer";
+import Header from "./new-site/components/Header";
 
 export default async function LocaleLayout({ children, params }) {
   const { locale } = await params;
@@ -43,8 +45,13 @@ export default async function LocaleLayout({ children, params }) {
         `}</style>
       </head>
       <body>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+
+          <Header />
+          {children}
         <ToastContainer autoClose={3000} />
+        <Footer />
+        </NextIntlClientProvider>
        </body>
     </html>
   );

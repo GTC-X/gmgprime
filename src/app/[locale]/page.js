@@ -55,7 +55,7 @@ export const metadata = {
 export default function HomePage() {
   return (
     <>
-      <CommonHeader />
+   
       <NewBanner />
       <SolutionsSnapshot />
       <TechnologyHighlight />
