@@ -21,7 +21,7 @@ export default function AboutPage() {
     return (
         <main className=" text-white">
             {/* Who we are */}
-            <Header />
+   
             <WhoWeAre />
             <WhatWeDo />
             <WhoWeServe />

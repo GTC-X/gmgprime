@@ -29,7 +29,7 @@ const sections = [
 export default function PrivacyPolicyPage() {
     return (
         <>
-            <Header />
+      
             <main className=" text-white">
                 {/* Hero */}
                 <section className="relative overflow-hidden">

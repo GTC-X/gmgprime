@@ -212,7 +212,7 @@ export default function FaqPage() {
     return (
         <main className=" text-white">
             {/* Hero */}
-            <Header />
+ 
             <section className="relative overflow-hidden">
                 <div className="container mx-auto px-4 py-16 xl:py-28">
                     <div className="max-w-[800px]">

@@ -22,8 +22,8 @@ export default function Header() {
             ["Solutions", "/solutions"],
             ["Products", "/products"],
             ["Platforms", "/platforms"],
-            ["Partners", "/partners"],
-            ["Contact", "/contact"],
+            ["FAQ's", "/faqs"],
+            ["Contact", "/contact-us"],
           ].map(([label, href]) => (
             <li key={href}>
               <Link className="text-white block px-2 py-6 text-lg transition hover:text-accent-400" href={href}>
