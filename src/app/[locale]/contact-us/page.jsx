@@ -1,4 +1,5 @@
 import Header from "../new-site/components/Header";
+import NewCommonFooter from "../new-site/components/sections/Footer";
 
 export const metadata = {
     title: "Contact Us | GMG Prime",
@@ -208,6 +209,7 @@ export default function ContactUsPage() {
                     </div>
                 </div>
             </section>
+            <NewCommonFooter />
         </main>
     );
 }

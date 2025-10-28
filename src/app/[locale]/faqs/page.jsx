@@ -2,6 +2,7 @@
 "use client";
 import { useMemo, useState } from "react";
 import Header from "../new-site/components/Header";
+import NewCommonFooter from "../new-site/components/sections/Footer";
 
 const sections = [
     {
@@ -326,54 +327,58 @@ export default function FaqPage() {
                     </div>
                 </div>
             </section>
+                        <NewCommonFooter />
+
         </main>
     );
 }
 
 function SectionBlock({ section, openKey, setOpenKey }) {
     return (
-        <div id={section.id} className="space-y-4">
-            <h2 className="text-heading-2">{section.title}</h2>
+        <>
+            <div id={section.id} className="space-y-4">
+                <h2 className="text-heading-2">{section.title}</h2>
 
-            <div className="space-y-3">
-                {section.items.map((item, idx) => {
-                    const key = `${section.id}-${idx}`;
-                    const isOpen = openKey === key;
-                    return (
-                        <div
-                            key={key}
-                            className="overflow-hidden rounded-2xl p-px bg-[linear-gradient(66deg,var(--tw-gradient-stops))] from-accent-400 via-sky-blue-500 to-sky-blue-600"
-                        >
-                            <div className="rounded-2xl bg-[#132F47]">
-                                <button
-                                    className="w-full flex items-center justify-between text-left px-5 py-4"
-                                    aria-expanded={isOpen}
-                                    onClick={() => setOpenKey(isOpen ? null : key)}
-                                >
-                                    <span className="text-body-1-semibold">{item.q}</span>
-                                    <span
-                                        className={`ms-2 inline-flex h-6 w-6 items-center justify-center rounded-full border border-neutral-500 transition-transform ${isOpen ? "rotate-90" : ""
-                                            }`}
-                                        aria-hidden="true"
+                <div className="space-y-3">
+                    {section.items.map((item, idx) => {
+                        const key = `${section.id}-${idx}`;
+                        const isOpen = openKey === key;
+                        return (
+                            <div
+                                key={key}
+                                className="overflow-hidden rounded-2xl p-px bg-[linear-gradient(66deg,var(--tw-gradient-stops))] from-accent-400 via-sky-blue-500 to-sky-blue-600"
+                            >
+                                <div className="rounded-2xl bg-[#132F47]">
+                                    <button
+                                        className="w-full flex items-center justify-between text-left px-5 py-4"
+                                        aria-expanded={isOpen}
+                                        onClick={() => setOpenKey(isOpen ? null : key)}
                                     >
-                                        ▸
-                                    </span>
-                                </button>
-                                <div
-                                    className={`grid transition-[grid-template-rows] duration-300 ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
-                                        }`}
-                                >
-                                    <div className="overflow-hidden">
-                                        <div className="px-5 pb-5 text-neutral-400 text-body-2">
-                                            {item.a}
+                                        <span className="text-body-1-semibold">{item.q}</span>
+                                        <span
+                                            className={`ms-2 inline-flex h-6 w-6 items-center justify-center rounded-full border border-neutral-500 transition-transform ${isOpen ? "rotate-90" : ""
+                                                }`}
+                                            aria-hidden="true"
+                                        >
+                                            ▸
+                                        </span>
+                                    </button>
+                                    <div
+                                        className={`grid transition-[grid-template-rows] duration-300 ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+                                            }`}
+                                    >
+                                        <div className="overflow-hidden">
+                                            <div className="px-5 pb-5 text-neutral-400 text-body-2">
+                                                {item.a}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    );
-                })}
+                        );
+                    })}
+                </div>
             </div>
-        </div>
+        </>
     );
 }

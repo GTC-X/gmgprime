@@ -6,6 +6,7 @@ import FeatureRow from "./components/featureRow";
 import Hero from "./components/hero";
 import TechSpecs from "./components/techSpecs";
 import Link from "next/link";
+import NewCommonFooter from "../new-site/components/sections/Footer";
 
 
 
@@ -132,6 +133,7 @@ export default function Page() {
 
             <TechSpecs />
             <CTA />
+            <NewCommonFooter/>
         </>
     );
 }
