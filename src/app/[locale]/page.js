@@ -45,6 +45,14 @@ import TechnologyHighlight from "./components/NewSectionTwo";
 import InstrumentsOverview from "./components/NewSectionThree";
 import OnboardingHowItWorks from "./components/NewSectionFour";
 import PromoStripes from "./components/NewSectionFive";
+import Header from "./new-site/components/Header";
+import MobileNav from "./new-site/components/MobileNav";
+import Hero from "./new-site/components/sections/Hero";
+import WhoWeAre from "./about-us/components/WhoWeAre";
+import PrimeServices from "./new-site/components/sections/PrimeServices";
+import Rostro from "./new-site/components/sections/Rostro";
+import ExploreSolutions from "./new-site/components/sections/ExploreSolutions";
+import Footer from "./new-site/components/Footer";
 
 export const metadata = {
   title: "Become a GTC Partner & Earn More with Top CPA & Rebates",
@@ -55,16 +63,22 @@ export const metadata = {
 export default function HomePage() {
   return (
     <>
-      <CommonHeader />
-      <NewBanner />
-      <SolutionsSnapshot />
-      <TechnologyHighlight />
-      <InstrumentsOverview />
-      <OnboardingHowItWorks />
-      <PromoStripes />
-      
-      {/* <CommonFooter /> */}
-      <SliderModalPrime isOpen={false} />
+      <div className=" relative">
+        <Header />
+        <MobileNav />
+        <Hero />
+      </div>
+      <WhoWeAre page="homepage" />
+      <PrimeServices />
+      <Rostro />
+
+      <ExploreSolutions />
+      {/* <PlatformEcosystem />
+                <Awards />
+                <CTA /> */}
+      {/* <Discover />
+            <LegalRisk /> */}
+      <Footer />
     </>
   );
 }

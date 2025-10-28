@@ -1,3 +1,4 @@
+import Header from "../new-site/components/Header";
 
 export const metadata = {
     title: "Contact Us | GMG Prime",
@@ -7,6 +8,7 @@ export const metadata = {
 export default function ContactUsPage() {
     return (
         <main className="  text-white">
+            <Header />
             {/* Hero */}
             <section className="relative overflow-hidden">
                 <div className="container mx-auto px-4 py-16 xl:py-28">

@@ -1,6 +1,7 @@
 // app/faq/page.jsx (Next.js App Router) or pages/faq.jsx (Pages Router)
 "use client";
 import { useMemo, useState } from "react";
+import Header from "../new-site/components/Header";
 
 const sections = [
     {
@@ -210,6 +211,7 @@ export default function FaqPage() {
     return (
         <main className=" text-white">
             {/* Hero */}
+            <Header />
             <section className="relative overflow-hidden">
                 <div className="container mx-auto px-4 py-16 xl:py-28">
                     <div className="max-w-[800px]">

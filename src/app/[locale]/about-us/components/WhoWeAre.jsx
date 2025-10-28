@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-const WhoWeAre = () => {
+const WhoWeAre = ({ page = "" }) => {
     return (
         <section className="container py-16 xl:py-24">
             <div className="grid gap-8 xl:grid-cols-2 xl:items-center">
                 <div>
-                    <h1 className="text-heading-1 mb-4 text-[#ED8946] font-normal">Who we are</h1>
+                    <h1 className={`text-heading-1 mb-4 ${page=="homepage"?" text-white":"text-[#ED8946]"} font-normal`}>Who we are</h1>
                     <p className="text-neutral-200 text-base lg:text-lg/[1.625rem] mb-4">
                         GMG Prime is the liquidity partner built to fit where a growth broker is—today and tomorrow.
                         We combine right-sized prime liquidity with clear commercial terms and dependable operations.

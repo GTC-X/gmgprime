@@ -11,6 +11,7 @@ import Technology from "./components/Technology";
 import Leadership from "./components/Leadership";
 import Commitments from "./components/Commitment";
 import Careers from "./components/Careers";
+import Header from "../new-site/components/Header";
 
 
 
@@ -19,6 +20,7 @@ export default function AboutPage() {
     return (
         <main className=" text-white">
             {/* Who we are */}
+            <Header />
             <WhoWeAre />
             <WhatWeDo />
             <WhoWeServe />
