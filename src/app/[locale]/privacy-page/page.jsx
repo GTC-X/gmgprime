@@ -335,9 +335,10 @@ function PolicyCard({
 }) {
     return (
         <section id={id} className="overflow-hidden rounded-2xl">
-            <div className="h-full rounded-2xl bg-primary-950 bg-[radial-gradient(ellipse_at_bottom_right,var(--tw-gradient-stops))] from-sky-blue-400/25 via-primary-800 to-primary-800 p-8 xl:p-10">
-                <h2 className="text-heading-2 mb-4">{title}</h2>
+    <div className="overflow-hidden rounded-2xl p-px bg-gradient-to-r from-[#265B9F] via-primary-800 to-accent-400">
+          <div className="h-full rounded-2xl bg-primary-950 bg-gradient-to-r from-primary-800 via-primary-800 to-primary-800 p-8 xl:p-8">                <h2 className="text-heading-2 mb-4">{title}</h2>
                 <div className="text-body-1 text-neutral-300">{children}</div>
+            </div>
             </div>
         </section>
     );

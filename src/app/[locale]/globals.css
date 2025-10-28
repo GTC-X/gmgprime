@@ -277,3 +277,22 @@ body {
 .border-t-transparent {
   border-top-color: transparent;
 }
+
+
+
+
+/* subtle pattern like the hero */
+.bg-dots {
+  background-image: radial-gradient(rgba(255,255,255,.06) 1px, transparent 1px);
+  background-size: 12px 12px;
+}
+
+/* border-light */
+.card-ring { box-shadow: 0 0 0 1px rgba(255,255,255,.06) inset; }
+
+/* image frame style used in cards */
+.img-frame { border-radius: 1rem; overflow:hidden; box-shadow: 0 10px 22px rgba(0,0,0,.35); }
+
+/* orange button hover focus */
+.btn-press { transform: translateY(0); transition: transform .15s ease, box-shadow .15s ease; }
+.btn-press:active { transform: translateY(2px); }

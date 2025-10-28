@@ -23,7 +23,7 @@ export default function Page() {
                 <MobileNav />
                 <Hero />
             </div>
-            <WhoWeAre />
+            <WhoWeAre page="homepage"/>
             <PrimeServices />
             <Rostro />
 
