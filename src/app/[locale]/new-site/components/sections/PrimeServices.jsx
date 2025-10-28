@@ -66,7 +66,7 @@ export default function PrimeServices() {
               key={i}
               className="overflow-hidden rounded-2xl p-px bg-gradient-to-t from-[#265B9F] via-primary-800 to-accent-400"
             >
-              <div className={`h-full rounded-2xl bg-[#081c2e]  p-8 xl:p-10 ${c.extra || ""}`}>
+              <div className={`h-full rounded-2xl bg-[#265B9F]  p-8 xl:p-10 ${c.extra || ""}`}>
                 <Image src={c.img} alt="Icon" width={50} height={50} className="mb-6" />
                 <p className="font-sofia font-normal text-base lg:text-lg/[1.625rem] text-white">{c.title}</p>
               </div>

@@ -225,12 +225,7 @@ export default function HighlightsLanding() {
           </section>
         </CardGradient>
 
-        {/* Secondary trust band */}
-        <div className="rounded-2xl bg-primary-800 p-6">
-          <p className="text-body-2">
-            Global Markets Group Limited. Trading name <span className="text-white">gmgmarkets.co.uk</span>. Company number 09493910. Authorised and regulated by the Financial Conduct Authority. FRN 744501.
-          </p>
-        </div>
+     
       </div>
     </main>
   );

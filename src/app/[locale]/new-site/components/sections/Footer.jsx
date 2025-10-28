@@ -75,6 +75,8 @@ export default function NewCommonFooter({
                 <div className="border-t border-white/10" />
             </div>
 
+            
+
             {/* Regulatory text */}
             <div className="container space-y-6 py-8 text-[14px] leading-7 text-text-mute">
                 <p>

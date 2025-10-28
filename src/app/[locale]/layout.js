@@ -50,7 +50,7 @@ export default async function LocaleLayout({ children, params }) {
           <Header />
           {children}
         <ToastContainer autoClose={3000} />
-        <Footer />
+
         </NextIntlClientProvider>
        </body>
     </html>

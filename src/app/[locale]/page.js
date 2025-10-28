@@ -17,7 +17,7 @@ export default function HomePage() {
   return (
     <>
       <div className=" relative">
-        <Header />
+
         <MobileNav />
         <Hero />
       </div>
