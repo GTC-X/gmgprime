@@ -28,7 +28,7 @@ export default function ContactUsPage() {
             <section className="container mx-auto px-4 pb-24 space-y-12">
                 {/* Book a Call Card */}
                 <div className="overflow-hidden rounded-2xl">
-                    <div className="h-full rounded-2xl bg-primary-950 bg-[radial-gradient(ellipse_at_bottom_right,var(--tw-gradient-stops))] from-sky-blue-400/25 via-primary-800 to-primary-800 p-8 xl:p-10">
+                    <div className="h-full rounded-2xl bg-primary-950 bg-gradient-to-r from-sky-blue-400/25 via-primary-800 to-primary-800 p-8 xl:p-10">
                         <h2 className="text-3xl font-normal mb-4">Speak to the Team</h2>
                         <p className="text-neutral-300 mb-6 max-w-3xl">
                             Share a few details and we’ll line up a technical review, pricing discussion, and sandbox slot.
@@ -46,7 +46,7 @@ export default function ContactUsPage() {
 
                 {/* Enquiry Form */}
                 <div className="overflow-hidden rounded-2xl p-px bg-gradient-to-b from-[#265B9F] via-primary-800 to-accent-400">
-                    <div className="h-full rounded-2xl bg-primary-950 bg-[radial-gradient(ellipse_at_bottom_right,var(--tw-gradient-stops))] from-sky-blue-400/25 via-primary-800 to-primary-800 p-8 xl:p-10">
+                    <div className="h-full rounded-2xl bg-primary-950 bg-gradient-to-r from-sky-blue-400/25 via-primary-800 to-primary-800 p-8 xl:p-10">
                         <h2 className="text-3xl font-normal mb-6">Enquiry Form</h2>
                         <p className="text-neutral-400 mb-8">
                             Keep it short on first pass — we’ll collect docs at onboarding.
@@ -131,7 +131,7 @@ export default function ContactUsPage() {
 
                 {/* Offices & Phone */}
                 <div className="overflow-hidden rounded-2xl">
-                    <div className="h-full rounded-2xl bg-primary-950 bg-[radial-gradient(ellipse_at_bottom_right,var(--tw-gradient-stops))] from-sky-blue-400/25 via-primary-800 to-primary-800 p-8 xl:p-10">
+                    <div className="h-full rounded-2xl bg-primary-950 bg-gradient-to-r from-sky-blue-400/25 via-primary-800 to-primary-800 p-8 xl:p-10">
                         <h2 className="text-3xl font-normal mb-6">Offices & Contact</h2>
                         <div className="grid md:grid-cols-2 gap-6">
                             <div>
@@ -163,7 +163,7 @@ export default function ContactUsPage() {
 
                 {/* What Happens Next */}
                 <div className="overflow-hidden rounded-2xl">
-                    <div className="h-full rounded-2xl bg-primary-950 bg-[radial-gradient(ellipse_at_bottom_right,var(--tw-gradient-stops))] from-sky-blue-400/25 via-primary-800 to-primary-800 p-8 xl:p-10">
+                    <div className="h-full rounded-2xl bg-primary-950 bg-gradient-to-r from-sky-blue-400/25 via-primary-800 to-primary-800 p-8 xl:p-10">
                         <h2 className="text-3xl font-normal mb-6">What Happens Next</h2>
                         <ol className="list-decimal pl-6 space-y-2 text-neutral-200">
                             <li>We review your details and confirm a time.</li>
@@ -175,7 +175,7 @@ export default function ContactUsPage() {
 
                 {/* Important Information */}
                 <div className="overflow-hidden rounded-2xl">
-                    <div className="h-full rounded-2xl bg-primary-950 bg-[radial-gradient(ellipse_at_bottom_right,var(--tw-gradient-stops))] from-sky-blue-400/25 via-primary-800 to-primary-800 p-8 xl:p-10 space-y-4">
+                    <div className="h-full rounded-2xl bg-primary-950 bg-gradient-to-r from-sky-blue-400/25 via-primary-800 to-primary-800 p-8 xl:p-10 space-y-4">
                         <h2 className="text-3xl font-normal mb-4">Important Information</h2>
                         <p className="text-neutral-300">
                             Global Markets Group Limited trading as gmgmarkets.co.uk and gmgprime.com. Company
