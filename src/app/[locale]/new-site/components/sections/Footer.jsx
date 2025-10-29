@@ -1,5 +1,5 @@
 export default function NewCommonFooter({
-    companyName = "Global Markets Group Limited",
+    companyName = "Global Markets Group Prime Limited",
     companyNumber = "09493910",
     fcaRef = "744501",
     address = "Green Park House, 15 Stratton Street, London W1J 8LQ, United Kingdom",
