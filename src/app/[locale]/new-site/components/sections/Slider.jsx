@@ -229,7 +229,7 @@ export default function FeatureSlider({
           modules={[Autoplay, Navigation, Pagination, A11y]}
           // show 1 on mobile, 2 on >= md
           slidesPerView={1}
-          breakpoints={{ 768: { slidesPerView: 2 } }}
+          breakpoints={{ 768: { slidesPerView: 3 } }}
           spaceBetween={24}
           // move ONE card at a time
           slidesPerGroup={1}
@@ -264,7 +264,7 @@ export default function FeatureSlider({
                       />
                     </div>
                     {item.title && (
-                      <h3 className="text-white text-base md:text-lg font-semibold">
+                      <h3 className="text-shadow-accent-700 text-base md:text-lg font-semibold">
                         {item.title}
                       </h3>
                     )}

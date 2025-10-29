@@ -36,7 +36,7 @@ export default function Hero() {
     },
   ];
   return (
-    <section className="py-16 xl:py-16  flex min-h-[900px] items-center overflow-hidden  bg-cover bg-center bg-no-repeat">
+    <section className="flex min-h-[900px] items-center overflow-hidden  bg-cover bg-center bg-no-repeat">
       <div
         className="pointer-events-none hidden md:block absolute right-0 top-0 h-full w-full"
         style={{
@@ -47,7 +47,7 @@ export default function Hero() {
         }}
       />
       <div className="container relative">
-        <h1 className="text-[48px] mb-4 text-center font-bold md:text-[60px] leading-[72px]">
+        <h1 className="text-[48px] mb-4 text-center font-bold md:text-[60px] leading-[72px] capitalize max-w-xl mx-auto">
           Prime liquidity for growing brokers
         </h1>
         <p className="font-sofia font-normal text-base lg:text-lg/[1.625rem] mb-6 text-center text-white">
@@ -83,7 +83,7 @@ export default function Hero() {
         </div>
 
         <div className="  max-w-5xl py-10 text-center mx-auto text-white">
-          <p className="text-[16px] text-primary leading-relaxed font-semibold pt-2">
+          <p className="text-[16px] text-primary leading-relaxed font-semibold pt-2 text-shadow-accent-700 capitalize">
             Authorised and regulated by the FCA. FRN 744501.<br />
           </p>
 
@@ -106,7 +106,7 @@ export default function Hero() {
           pauseOnHover
           showDots
           showArrows={false}
-          className="mb-10"
+          className=""
         />
 
 
