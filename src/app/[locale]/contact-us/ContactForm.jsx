@@ -1,5 +1,6 @@
 "use client"
 import { Formik, Form, Field, ErrorMessage, FieldArray } from "formik";
+import { toast } from "react-toastify";
 import * as Yup from "yup";
 
 /* ---------- Reusable Formik-aware Inputs ---------- */
@@ -134,7 +135,7 @@ const ContactForm = () => {
     /* ---------- Submit handler (POST to /api/contact) ---------- */
     async function onSubmit(values, { setSubmitting, resetForm }) {
         try {
-            const res = await fetch("/api/contact", {
+            const res = await fetch("/api/send-support-email", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(values),
@@ -142,15 +143,16 @@ const ContactForm = () => {
 
             if (!res.ok) {
                 const text = await res.text();
-                throw new Error(text || "Failed to submit");
+                toast.error(text || "Failed to submit enquiry.");
+                return
             }
 
             // Success UX
-            alert("Thanks! Your enquiry has been received. Our team will get back to you shortly.");
+            toast.success("Thanks! Your enquiry has been received. Our team will get back to you shortly.");
             resetForm();
         } catch (err) {
             console.error(err);
-            alert("Sorry, something went wrong submitting your enquiry.");
+            toast.error("Sorry, something went wrong submitting your enquiry.");
         } finally {
             setSubmitting(false);
         }
