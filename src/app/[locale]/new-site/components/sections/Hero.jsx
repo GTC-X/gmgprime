@@ -38,7 +38,7 @@ export default function Hero() {
   return (
     <section className="pt-16 xl:py-16  flex min-h-[900px] items-center overflow-hidden  bg-cover bg-center bg-no-repeat">
       <div
-        className="pointer-events-none hidden md:block absolute right-0 top-0 h-full w-full"
+        className="pointer-events-none hidden md:block absolute right-0 top-[-92px] h-full w-full"
         style={{
           backgroundImage: "url('/new/bg-new1.png')",
           backgroundSize: "cover",
