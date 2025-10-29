@@ -64,10 +64,10 @@ export default function PrimeServices() {
           {items.map((c, i) => (
             <div
               key={i}
-              className="overflow-hidden rounded-2xl p-px bg-gradient-to-t from-[#265B9F] via-primary-800 to-accent-400"
+              className="overflow-hidden rounded-full p-px bg-gradient-to-t from-accent-400 via-accent-400 to-accent-400"
             >
-              <div className={`h-full rounded-2xl bg-[#265B9F]  p-8 xl:p-10 ${c.extra || ""}`}>
-                <Image src={c.img} alt="Icon" width={50} height={50} className="mb-6" />
+              <div className={`h-full flex flex-row item justify-center items-center gap-5 rounded-2xl bg-[#162166] py-3 ${c.extra || ""}`}>
+                <Image src={c.img} alt="Icon" width={30} height={30} />
                 <p className="font-sofia font-normal text-base lg:text-lg/[1.625rem] text-white">{c.title}</p>
               </div>
             </div>
