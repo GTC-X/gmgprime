@@ -17,6 +17,6 @@ export const mailOptions = {
 }
 
 export const mailOptionsSupport = {
-    from: "portal@mx4.gtcmail.com",
+    from: "portal@mx4.gtcmail.com", 
     to:"partners@gtcpayouts.com",  
 }
