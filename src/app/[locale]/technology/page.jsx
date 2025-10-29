@@ -8,13 +8,16 @@ import TechSpecs from "./components/techSpecs";
 import Link from "next/link";
 import NewCommonFooter from "../new-site/components/sections/Footer";
 
-
+export const metadata = {
+    title: "Built on proven infrastructure | GMG Prime",
+    description:
+        "You want low latency, stability and deep connectivity. Our customizable, private L1/2 network stack lets you build once and trade with confidence.",
+};
 
 export default function Page() {
     return (
         <>
             <div className=" relative">
-                <Header />
                 <Hero />
             </div>
 
@@ -133,7 +136,7 @@ export default function Page() {
 
             <TechSpecs />
             <CTA />
-            <NewCommonFooter/>
+            <NewCommonFooter />
         </>
     );
 }

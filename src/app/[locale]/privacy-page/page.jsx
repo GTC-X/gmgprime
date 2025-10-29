@@ -1,7 +1,5 @@
 /* app/privacy-policy/page.tsx */
 
- import Header from "../new-site/components/Header";
-
 export const metadata = {
     title: "Privacy Policy | GMG Prime",
     description: "How GMG Prime collects, uses and protects your data.",
