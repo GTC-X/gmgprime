@@ -36,7 +36,7 @@ export default function Hero() {
     },
   ];
   return (
-    <section className="py-16 xl:py-16  flex min-h-[900px] items-center overflow-hidden  bg-cover bg-center bg-no-repeat">
+    <section className="pt-16 xl:py-16  flex min-h-[900px] items-center overflow-hidden  bg-cover bg-center bg-no-repeat">
       <div
         className="pointer-events-none hidden md:block absolute right-0 top-0 h-full w-full"
         style={{
@@ -47,7 +47,7 @@ export default function Hero() {
         }}
       />
       <div className="container relative">
-        <h1 className="text-[48px] mb-4 text-center font-bold md:text-[60px] leading-[72px]">
+        <h1 className="text-[48px] leading-[60px] mb-4 text-center font-bold md:text-[60px] md:leading-[72px]">
           Prime liquidity for growing brokers
         </h1>
         <p className="font-sofia font-normal text-base lg:text-lg/[1.625rem] mb-6 text-center text-white">
@@ -55,10 +55,10 @@ export default function Hero() {
           Fast integration, transparent terms, and support that helps you ship.
         </p>
 
-        <div className="flex gap-6 justify-center">
+        <div className="flex gap-6 flex-col md:flex-row justify-center">
           <button
             type="button"
-            className="transition-colors bg-[#ED8946] text-[18px] inline-flex items-center gap-1 hover:bg-[#00B8D4] bg-secondary text-white font-medium px-4 py-2 rounded-lg"
+            className="transition-colors justify-center bg-[#ED8946] text-[18px] inline-flex items-center gap-1 hover:bg-[#00B8D4] bg-secondary text-white font-medium px-4 py-2 rounded-lg"
           >
             <span>Book a call</span>
             <svg width="18" height="18" viewBox="0 0 24 24" className="opacity-90">
@@ -70,7 +70,7 @@ export default function Hero() {
           </button>
           <button
             type="button"
-            className="transition-colors bg-[#265B9F] text-[18px] inline-flex items-center gap-1 hover:bg-[#00B8D4] bg-secondary text-white font-medium px-4 py-2 rounded-lg"
+            className="transition-colors justify-center bg-[#265B9F] text-[18px] inline-flex items-center gap-1 hover:bg-[#00B8D4] bg-secondary text-white font-medium px-4 py-2 rounded-lg"
           >
             <span> Request pricing</span>
             <svg width="18" height="18" viewBox="0 0 24 24" className="opacity-90">

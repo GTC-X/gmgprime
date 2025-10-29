@@ -51,7 +51,7 @@ export default function WhoThisIsFor({
   };
 
   return (
-    <section className="bg-[#132f47] py-10 md:py-14">
+    <section className="py-10 md:py-14">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-center text-[26px] md:text-[28px] xl:text-[36px] font-bold text-[#F29120] mb-5">
           {title}
