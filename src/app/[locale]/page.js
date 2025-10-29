@@ -9,9 +9,9 @@ import NewCommonFooter from "./new-site/components/sections/Footer";
 import SliderModalPrime from "./components/SliderModal";
 
 export const metadata = {
-  title: "Become a GTC Partner & Earn More with Top CPA & Rebates",
+  title: "Prime Liquidity for Growing Brokers | GMG Prime",
   description:
-    "Register as a GTC Partner today & earn up to $1,850 CPA as an Affiliate or 80% in rebates as an IB. Fast payouts & loyalty rewards that keep traders active.",
+    "Institutional pricing that fits your stage. Fast integration, transparent terms, and support that helps you ship.",
 };
 
 export default function HomePage() {
