@@ -5,7 +5,8 @@ import WhoWeAre from "./about-us/components/WhoWeAre";
 import PrimeServices from "./new-site/components/sections/PrimeServices";
 import Rostro from "./new-site/components/sections/Rostro";
 import ExploreSolutions from "./new-site/components/sections/ExploreSolutions";
- import NewCommonFooter from "./new-site/components/sections/Footer";
+import NewCommonFooter from "./new-site/components/sections/Footer";
+import SliderModalPrime from "./components/SliderModal";
 
 export const metadata = {
   title: "Become a GTC Partner & Earn More with Top CPA & Rebates",
@@ -17,7 +18,6 @@ export default function HomePage() {
   return (
     <>
       <div className=" relative">
-
         <MobileNav />
         <Hero />
       </div>
@@ -26,11 +26,7 @@ export default function HomePage() {
       <Rostro />
 
       <ExploreSolutions />
-      {/* <PlatformEcosystem />
-                <Awards />
-                <CTA /> */}
-      {/* <Discover />
-            <LegalRisk /> */}
+      <SliderModalPrime />
       <NewCommonFooter />
     </>
   );
