@@ -7,7 +7,8 @@ import { useState } from "react";
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="container relative z-50 flex items-center pt-4">
+   <section className="border border-b border-gray-200/10">
+    <header className="container relative z-50 flex items-center justify-between pt-4">
       <div className="flex-1 justify-between text-white xl:self-center">
         <Link href="/">
           <Image src="/new/new-logo.svg" className=" h-12"
@@ -16,7 +17,7 @@ export default function Header() {
       </div>
 
       <nav className="hidden grow md:block">
-        <ul className="flex justify-center gap-x-12">
+        <ul className="flex justify-end gap-x-6">
           {[
             ["Home", "/"],
             ["About Us", "/about-us"],
@@ -42,13 +43,10 @@ export default function Header() {
         >
           ≡
         </button>
-        <Link
-          className="hidden whitespace-nowrap rounded border-transparent p-2 text-lg text-accent-400 transition xl:block"
-          href="/contact-us"
-        >
-          Request Demo
-        </Link>
+     
       </div>
     </header>
+    </section>
+  
   );
 }

@@ -101,38 +101,7 @@ export default function HighlightsLanding() {
     <main className=" text-white">
       <div className="container mx-auto px-4 py-16 xl:py-24 space-y-8">
 
-        {/* Technology highlight */}
-        <CardGradient>
-          <section className="grid xl:grid-cols-3 gap-8 items-start">
-            <div className="space-y-2">
-              <h2 className="text-heading-2">Technology highlight</h2>
-              <p className="text-neutral-400 text-body-2">
-                Built on PrimeXM in LD4
-              </p>
-            </div>
-
-            <div className="xl:col-span-2 space-y-4">
-              <p className="text-body-1">
-                A dedicated global network with low latency and failover protection for continuous access.
-              </p>
-              <FeatureList
-                items={[
-                  "Real-time P&L, centralised margin, quick order entry, drop copy, and reliable redundancy.",
-                  "Bridges supported include PrimeXM and TFB. Integrated to MetaTrader 5.",
-                ]}
-              />
-              <div>
-                <Link
-                  href="/technology"
-                  className="inline-flex items-center rounded-xl px-5 py-3 bg-accent-400 text-white font-medium hover:bg-accent-400/80 transition-colors"
-                >
-                  Explore our technology
-                </Link>
-              </div>
-            </div>
-          </section>
-        </CardGradient>
-
+     
         {/* Instruments overview */}
         <CardGradient>
           <section className="flex flex-col gap-4">
@@ -211,15 +180,7 @@ export default function HighlightsLanding() {
           </section>
         </CardGradient>
 
-        {/* Compliance notice */}
-        <CardGradient>
-          <section>
-            <h2 className="text-heading-3 mb-3">Compliance & jurisdiction notice</h2>
-            <p className="text-neutral-400 text-body-2">
-              The information on this site is not directed at residents of the United States, Japan, Canada, Belgium or any other jurisdiction where distribution or use would be contrary to local law or regulation. You must be of minimum legal age as determined by your country of origin to use services on this website.
-            </p>
-          </section>
-        </CardGradient>
+      
 
 
       </div>

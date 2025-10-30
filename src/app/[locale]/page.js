@@ -22,8 +22,9 @@ export default function HomePage() {
         <Hero />
       </div>
       <WhoWeAre page="homepage" />
+      
       <PrimeServices />
-      <Rostro />
+
 
       <ExploreSolutions />
       <SliderModalPrime />

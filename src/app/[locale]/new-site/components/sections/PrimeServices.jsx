@@ -1,77 +1,75 @@
 import Image from "next/image";
 
-const cards = [
-  { icon: "/images/icons/share.svg", text: "Liquidity for Brokers" },
-  { icon: "/images/icons/futures.svg", text: "DMA Futures & Options" },
+const items = [
   {
-    icon: "/images/icons/equities.svg",
-    text: "DMA Equities and ETFs",
-    extra: "bg-[radial-gradient(ellipse_at_bottom_left,var(--tw-gradient-stops))] from-sky-blue-400/25 via-sky-blue-400/0",
+    title: "Liquidity for Brokers",
+    img: "/new/img1.svg",
+    desc: "Aggregated depth from banks, non-banks, ECNs and internal pools. Streams tailored to your model.",
   },
-  { icon: "/images/icons/wallet.svg", text: "Fixed Income" },
-  { icon: "/images/icons/bank.svg", text: "Funds" },
+  {
+    title: "Pricing Models",
+    img: "/new/img2.svg",
+    desc: "Commission plus raw, embedded mark-up, or a hybrid that scales with volume.",
+  },
+  {
+    title: "Risk & Controls",
+    img: "/new/img3.svg",
+    desc: "Pre-trade limits, throttles, kill-switch, market impact controls, symbol-level settings.",
+  },
+  {
+    title: "Connectivity & Access",
+    img: "/icons/p1.svg",
+    desc: "FIX 4.4, PrimeXM and TFB bridges, MT5. One integration across multiple sources.",
+  },
+  {
+    title: "Reporting & TCA",
+    img: "/icons/p2.svg",
+    desc: "Daily statements, activity, exposure, downloadable PDF, Excel or XML. Real-time TCA available.",
+  },
+  {
+    title: "Onboarding & Go-Live",
+    img: "/icons/p3.svg",
+    desc: "Dedicated sandbox, FIX testing, parallel run support, named engineer, 24/5 technical coverage.",
+  },
 ];
-
-  const items = [
-        {
-            title: "Liquidity for Brokers",
-            icon: "bar",
-            img: "/new/img1.svg"
-        },
-        {
-            title: "Pricing Models",
-            icon: "pricing",
-            img: "/new/img2.svg"
-        },
-        {
-            title: "Risk & Controls",
-            icon: "shield",
-            img: "/new/img3.svg"
-        },
-        {
-            title: "Connectivity & Access",
-            icon: "link",
-            img: "/new/img2.svg"
-        },
-        {
-            title: "Reporting & TCA",
-            icon: "report",
-            img: "/new/img2.svg"
-        },
-        {
-            title: "Onboarding & Go-Live",
-            icon: "play",
-            img: "/new/img2.svg"
-        },
-    ];
 
 export default function PrimeServices() {
   return (
-    <section className="py-16 xl:py-20">
+    <section className="py-16 border border-white/5">
       <div className="container">
-        <h1 className="text-heading-1 mx-auto mb-16 max-w-screen-sm text-center font-normal">
-          Solutions snapshot
-        </h1>
+        {/* Section Title */}
+        <h2 className="text-center text-[28px] md:text-[34px] font-bold text-[#E77831] mb-12">
+          Solutions Snapshot
+        </h2>
 
+        {/* Cards Grid */}
         <div className="grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
-          {/* <div className="flex items-center justify-center flex-col xl:flex-row gap-12">
-            <div>
-              <h1 className="text-heading-1 text-center font-normal text-accent-400">40,000+</h1>
-              <h2 className="text-heading-2 text-center font-normal">Financial Assets</h2>
-            </div>
-          </div> */}
-
           {items.map((c, i) => (
             <div
               key={i}
-              className="overflow-hidden rounded-full border border-white/20"
+              className="bg-[#162166] rounded-2xl border border-white/10 p-6 flex flex-col justify-start hover:shadow-[0_8px_24px_rgba(13,43,69,0.25)] transition-all duration-300"
             >
-              <div className={`h-full flex flex-row item justify-center items-center gap-5 rounded-2xl bg-[#162166] py-3 ${c.extra || ""}`}>
-                <Image src={c.img} alt="Icon" width={30} height={30} />
-                <p className="font-sofia font-normal text-base lg:text-lg/[1.625rem] text-white">{c.title}</p>
+              <div className="flex items-center gap-4 mb-3">
+                <div className="h-10 w-10 flex items-center justify-center rounded-full bg-[#265B9F]/20">
+                  <Image src={c.img} alt={c.title} width={28} height={28} />
+                </div>
+                <h3 className="text-lg md:text-xl font-semibold text-white">
+                  {c.title}
+                </h3>
               </div>
+
+              <p className="text-sm md:text-base text-white/70 leading-relaxed pl-14 md:pl-14">
+                {c.desc}
+              </p>
             </div>
           ))}
+        </div>
+
+        {/* CTA Button */}
+        <div className="mt-10 text-center">
+          <button className="bg-[#E77831] text-white px-6 py-3 rounded-xl font-medium hover:bg-[#cc692c] transition-all">
+            See all solutions
+          </button>
         </div>
       </div>
     </section>
