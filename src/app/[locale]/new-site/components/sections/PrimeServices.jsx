@@ -64,7 +64,7 @@ export default function PrimeServices() {
           {items.map((c, i) => (
             <div
               key={i}
-              className="overflow-hidden rounded-full p-px bg-gradient-to-t from-accent-400 via-accent-400 to-accent-400"
+              className="overflow-hidden rounded-full border border-white/20"
             >
               <div className={`h-full flex flex-row item justify-center items-center gap-5 rounded-2xl bg-[#162166] py-3 ${c.extra || ""}`}>
                 <Image src={c.img} alt="Icon" width={30} height={30} />
