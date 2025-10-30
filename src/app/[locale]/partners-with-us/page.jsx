@@ -28,17 +28,20 @@ import WhoThisIsFor from './components/WhoThisIsFor'
 import WhyPartner from './components/WhyPartner';
 import NewCommonFooter from '../new-site/components/sections/Footer';
 
+export const metadata = {
+  title: "Grow together with a partner that actually helps | GMG Prime",
+  description:
+    "If you bring quality broker leads or run a network, we’ll give you clear tracking, fair rewards and support that makes your life easier.",
+};
+
 export default function PartnersPage() {
   return (
     <main className="bg-navy-950">
       <BannerPartners />
       <WhoThisIsFor />
-
       <WhyPartner />
-
       <Steps />
       <WhatYouGet />
-
       <div className="bg-navy-950">
         <SplitNote
           title="Referral Criteria"

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import FeatureLinks from "./FeatureLinks";
 import FeatureSlider from "./Slider";
+import CommonButton from "../../../components/CommonButton";
 
 export default function Hero() {
   const ITEMS = [
@@ -56,30 +57,8 @@ export default function Hero() {
         </p>
 
         <div className="flex gap-6 justify-center">
-          <button
-            type="button"
-            className="transition-colors bg-[#ED8946] text-[18px] inline-flex items-center gap-1 hover:bg-[#00B8D4] bg-secondary text-white font-medium px-4 py-2 rounded-lg"
-          >
-            <span>Book a call</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" className="opacity-90">
-              <path
-                fill="currentColor"
-                d="M13.172 12L8.222 7.05l1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
-              />
-            </svg>
-          </button>
-          <button
-            type="button"
-            className="transition-colors bg-[#265B9F] text-[18px] inline-flex items-center gap-1 hover:bg-[#00B8D4] bg-secondary text-white font-medium px-4 py-2 rounded-lg"
-          >
-            <span> Request pricing</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" className="opacity-90">
-              <path
-                fill="currentColor"
-                d="M13.172 12L8.222 7.05l1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
-              />
-            </svg>
-          </button>
+          <CommonButton>Book a call</CommonButton>
+          <CommonButton variant="ghost"> Request pricing</CommonButton>
         </div>
 
         <div className="  max-w-5xl py-10 text-center mx-auto text-white">

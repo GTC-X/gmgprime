@@ -17,11 +17,9 @@ export default function MobileNav() {
         {[
           ["Home", "/"],
           ["About Us", "/about-us"],
-          ["Solutions", "/solutions"],
-          ["Products", "/products"],
-          ["Platforms", "/platforms"],
-          ["Partners", "/partners"],
-          ["Contact", "/contact"],
+          ["Partners", "/partners-with-us"],
+          ["Technology", "/technology"],
+          ["Contact", "/contact-us"],
         ].map(([label, href]) => (
           <li key={href}>
             <Link className="text-white block p-2 px-10 py-6 text-lg transition hover:text-accent-400" href={href}>

@@ -6,7 +6,7 @@ const WhoWeAre = ({ page = "" }) => {
         <section className="bg-[#0a1942]">
 
      
-        <div className="container pb-16 xl:pb-24">
+        <div className="container py-16 xl:py-24">
             <div className="grid gap-8 xl:grid-cols-2 xl:items-center">
                 <div>
                     <h1 className={`text-heading-1 mb-4 ${page=="homepage"?" text-white":"text-[#ED8946]"} font-normal capitalize`}>Who we are</h1>

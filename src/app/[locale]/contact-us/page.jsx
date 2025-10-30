@@ -1,8 +1,13 @@
-"use client";
 
- import NewCommonFooter from "../new-site/components/sections/Footer";
+import CommonButton from "../components/CommonButton";
+import NewCommonFooter from "../new-site/components/sections/Footer";
 import ContactForm from "./ContactForm";
 
+export const metadata = {
+    title: "Contact Us | GMG Prime",
+    description:
+        "Speak to our team — the fastest way to move forward is a quick call with an engineer and RM.",
+};
 
 function InfoCard({
     title,
@@ -58,9 +63,7 @@ export default function ContactUsPage() {
                             sandbox slot.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <button className="bg-accent-400 px-10 py-3 rounded-lg font-medium text-primary-950 hover:opacity-90 transition">
-                                Book a Call
-                            </button>
+                            <CommonButton>Book a Call</CommonButton>
                             <button className="bg-transparent border border-sky-blue-500 px-10 py-3 rounded-lg text-white hover:bg-sky-blue-500/10 transition">
                                 Request Pricing
                             </button>
@@ -149,7 +152,7 @@ export default function ContactUsPage() {
                         <h3 className="text-lg font-medium mt-4">Data Protection</h3>
                         <p className="text-neutral-300">
                             We process enquiries in line with our{" "}
-                            <a href="/privacy-policy" className="text-accent-400 underline hover:text-accent-300">
+                            <a href="/privacy-page" className="text-accent-400 underline hover:text-accent-300">
                                 Privacy Policy
                             </a>
                             .

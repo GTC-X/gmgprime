@@ -47,7 +47,7 @@ const cards = [
 
 export default function PrimeServices() {
   return (
-    <section className="pb-20 xl:pb-28">
+    <section className="py-16 xl:py-20">
       <div className="container">
         <h1 className="text-heading-1 mx-auto mb-16 max-w-screen-sm text-center font-normal">
           Solutions snapshot

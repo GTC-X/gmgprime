@@ -18,11 +18,11 @@ export default function Header() {
       <nav className="hidden grow md:block">
         <ul className="flex justify-center gap-x-12">
           {[
+            ["Home", "/"],
             ["About Us", "/about-us"],
-            ["Solutions", "/solutions"],
-            ["Products", "/products"],
-            ["Platforms", "/platforms"],
-            ["FAQ's", "/faqs"],
+            ["Partners", "/partners-with-us"],
+            ["Technology", "/technology"],
+            ["Faqs", "/faqs"],
             ["Contact", "/contact-us"],
           ].map(([label, href]) => (
             <li key={href}>
@@ -44,7 +44,7 @@ export default function Header() {
         </button>
         <Link
           className="hidden whitespace-nowrap rounded border-transparent p-2 text-lg text-accent-400 transition xl:block"
-          href="/contact"
+          href="/contact-us"
         >
           Request Demo
         </Link>

@@ -111,7 +111,8 @@ export default function NewCommonFooter({
                     </a>
                     . CFDs and Spread Bets are highly speculative products which carry a high level of risk and can result in losses exceeding your deposit. As such, they are not appropriate for every investor. Any information provided shall not be considered as investment advice and has been prepared without considering your individual objectives, financial situation or needs. Before deciding to trade our products, you should carefully consider your objectives, financial situation, and level of experience and risk appetite. If in any doubt, you should seek advice from an independent advisor. Past performance is not indicative of future results.{" "}
                     <a
-                        href="#risk-warning"
+                        href="/privacy-page"
+                        target="_blank"
                         className="text-sky-400 hover:text-sky-300 underline underline-offset-2"
                     >
                         View full risk warning

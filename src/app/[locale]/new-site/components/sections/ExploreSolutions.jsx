@@ -37,7 +37,7 @@
 //       <div className="container">
 //         <div className="overflow-hidden rounded-2xl bg-gradient-to-l p-px from-[#265B9F] via-primary-800 to-accent-400 pb-px">
 //           <div className="h-full rounded-2xl bg-[#081c2e]  bg-cover bg-center bg-no-repeat p-10 xl:p-16">
- 
+
 //             <div className="grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
 //               {items.map((it) => (
 //                 <div key={it.title} className="overflow-hidden rounded-2xl border border-neutral-400/50 p-0">
@@ -93,6 +93,7 @@
 // app/components/HighlightsLanding.jsx  (or pages/anywhere.jsx)
 "use client";
 
+import CommonButton from "../../../components/CommonButton";
 import Link from "next/link";
 
 export default function HighlightsLanding() {
@@ -143,7 +144,7 @@ export default function HighlightsLanding() {
               FX spot and forwards, precious and base metals, global indices and equity CFDs, energies, single stocks, and cryptocurrencies.
             </p>
             <Link
-              href="/products"
+              href="/"
               className="text-accent-400 underline text-body-2 w-fit"
             >
               View full product list
@@ -185,12 +186,7 @@ export default function HighlightsLanding() {
             </ol>
 
             <div className="mt-6">
-              <Link
-                href="/onboarding"
-                className="inline-flex items-center rounded-xl px-5 py-3 bg-accent-400 text-white font-medium hover:bg-accent-400/80 transition-colors"
-              >
-                Start the process
-              </Link>
+              <CommonButton>Start the process</CommonButton>
             </div>
           </section>
         </CardGradient>
@@ -206,7 +202,7 @@ export default function HighlightsLanding() {
             </div>
             <div>
               <Link
-                href="/partners"
+                href="/partners-with-us"
                 className="inline-flex items-center rounded-xl px-5 py-3 bg-accent-400 text-white font-medium hover:bg-accent-400/80 transition-colors whitespace-nowrap"
               >
                 Partner with GMG Prime
@@ -225,7 +221,7 @@ export default function HighlightsLanding() {
           </section>
         </CardGradient>
 
-     
+
       </div>
     </main>
   );

@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import Header from "../new-site/components/Header";
 import NewCommonFooter from "../new-site/components/sections/Footer";
+import Meta from "../components/Meta";
 
 const sections = [
     {
@@ -210,6 +211,8 @@ export default function FaqPage() {
     }, [query]);
 
     return (
+        <>
+        <Meta title="FAQs | GMG Prime " description="Answers to common questions about onboarding, connectivity, pricing, risk controls, and support."/>
         <main className=" text-white">
             {/* Hero */}
  
@@ -330,6 +333,7 @@ export default function FaqPage() {
                         <NewCommonFooter />
 
         </main>
+        </>
     );
 }
 

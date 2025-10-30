@@ -111,19 +111,19 @@
 /* Front face with gradient border */
 .card-front {
   padding: 1px;
-  background: linear-gradient(66deg, #00c6ff, #0072ff, #00c6ff);
+  background: #ed8946
 }
 
 .card-front > div {
   border-radius: inherit;
   height: 100%;
-  background-color: #0d1520; /* bg-primary-950 */
+  background-color: #162166; /* bg-primary-950 */
 }
 
 /* Back face styling */
 .card-back {
   transform: rotateY(180deg);
-  background: linear-gradient(135deg, #111c2b, #0a1019);
+  background: #162166; 
   display: flex;
   align-items: center;
   justify-content: center;
