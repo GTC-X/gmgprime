@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Technology = () => {
     return (
-        <section className="bg-primary-800 py-16 xl:py-24">
+        <section className="py-12 xl:py-16">
             <div className="container grid gap-10 xl:grid-cols-2 xl:items-center">
                 <div>
                     <h3 className="text-heading-2 mb-3 font-normal text-[#ED8946]">Technology you can trust</h3>
@@ -11,7 +11,8 @@ const Technology = () => {
                         Built on a dedicated global network for low latency and failover protection, with real-time
                         reporting and reliable redundancy. Bridges supported include PrimeXM and TFB; integrated to MetaTrader 5.
                     </p>
-                    <Link href="/technology">
+                    <div className="mt-5">
+                        <Link href="/technology">
                         <button
                             type="button"
                             className="transition-colors bg-[#ED8946] text-[18px] inline-flex items-center gap-1 hover:bg-[#00B8D4] bg-secondary text-white font-medium px-4 py-2 rounded-lg"
@@ -25,6 +26,8 @@ const Technology = () => {
                             </svg>
                         </button>
                     </Link>
+                    </div>
+                    
 
                 </div>
 

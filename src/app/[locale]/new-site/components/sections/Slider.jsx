@@ -253,7 +253,8 @@ export default function FeatureSlider({
           {items.map((item, i) => (
             <SwiperSlide key={i} className="!h-auto">
               <div className="h-full p-4 md:p-6">
-                <div className="rounded-xl border border-white/10 p-6 h-full flex flex-col gap-4 bg-[#162166]/90 ">
+                <div className="overflow-hidden rounded-2xl p-px bg-gradient-to-r from-accent-400 via-sky-blue-500 to-accent-400">
+                <div className="rounded-2xl bg-primary-950 bg-gradient-to-r from-[#162166] via-primary-800 to-[#0c1447] p-6 xl:p-10">
                   <div className="flex items-center flex-col text-center gap-3">
                     <div className="w-12 h-12 rounded-full grid place-items-center shrink-0">
                       <Image
@@ -272,6 +273,7 @@ export default function FeatureSlider({
                   <p className="text-[#C9D3E1] text-center text-sm md:text-base leading-relaxed">
                     {item.text}
                   </p>
+                </div>
                 </div>
               </div>
             </SwiperSlide>

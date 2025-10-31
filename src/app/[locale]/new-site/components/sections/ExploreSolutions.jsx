@@ -99,7 +99,7 @@ import Link from "next/link";
 export default function HighlightsLanding() {
   return (
     <main className=" text-white">
-      <div className="container mx-auto px-4 py-16 xl:py-24 space-y-8">
+      <div className="container mx-auto px-4 py-10 xl:py-14 space-y-8">
 
      
         {/* Instruments overview */}
@@ -161,24 +161,7 @@ export default function HighlightsLanding() {
         </CardGradient>
 
         {/* Partners & affiliates */}
-        <CardGradient>
-          <section className="flex flex-col xl:flex-row items-start gap-6">
-            <div className="flex-1">
-              <h2 className="text-heading-2 mb-2">For partners and affiliates</h2>
-              <p className="text-body-1">
-                CPA available for qualified partners, with tracking tools and co-marketing support. Up to 1,000 USD per referral.
-              </p>
-            </div>
-            <div>
-              <Link
-                href="/partners-with-us"
-                className="inline-flex items-center rounded-xl px-5 py-3 bg-accent-400 text-white font-medium hover:bg-accent-400/80 transition-colors whitespace-nowrap"
-              >
-                Partner with GMG Prime
-              </Link>
-            </div>
-          </section>
-        </CardGradient>
+     
 
       
 
@@ -192,8 +175,8 @@ export default function HighlightsLanding() {
 
 function CardGradient({ children }) {
   return (
-    <div className="overflow-hidden rounded-2xl p-px bg-gradient-to-r from-accent-400 via-sky-blue-500 to-sky-blue-600">
-      <div className="rounded-2xl bg-primary-950 bg-gradient-to-r from-sky-blue-400/25 via-primary-800 to-primary-800 p-6 xl:p-10">
+    <div className="overflow-hidden rounded-2xl p-px bg-gradient-to-r from-accent-400 via-sky-blue-500 to-accent-400">
+      <div className="rounded-2xl bg-primary-950 bg-gradient-to-r from-[#162166] via-primary-800 to-[#0c1447] p-6 xl:p-10">
         {children}
       </div>
     </div>

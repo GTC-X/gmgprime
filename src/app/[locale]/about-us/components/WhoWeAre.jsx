@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+import CommonButton from "../../components/CommonButton";
 
 const WhoWeAre = ({ page = "" }) => {
-    return (
+    return ( 
         <section className="bg-[#0a1942]">
 
      
@@ -23,22 +24,11 @@ const WhoWeAre = ({ page = "" }) => {
  Telephone (+44) 0203 865 3306
 
                     </p>
-
-                    <div className="flex gap-6 mt-8">
-                        <Link
-                            href="/about-us"
-                            className="transition-colors justify-center bg-[#ED8946] text-[16px] inline-flex items-center gap-1 hover:bg-[#162166] border border-white/10 bg-secondary text-white font-medium px-4 py-2 rounded-lg"
-                        >
-                            <span>Learn More About</span>
-                            <svg width="18" height="18" viewBox="0 0 24 24" className="opacity-90">
-                                <path
-                                    fill="currentColor"
-                                    d="M13.172 12L8.222 7.05l1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
-                                />
-                            </svg>
-                        </Link>
-                    
+                    <div className="mt-8">
+<CommonButton>Register to Explore More</CommonButton>
                     </div>
+
+                 
                 </div>
 
                 <div className="relative xl:justify-end">

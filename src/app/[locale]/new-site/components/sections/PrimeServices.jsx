@@ -35,7 +35,7 @@ const items = [
 
 export default function PrimeServices() {
   return (
-    <section className="py-16 border border-white/5">
+    <section className="py-12 border border-white/5">
       <div className="container">
         {/* Section Title */}
         <h2 className="text-center text-[28px] md:text-[34px] font-bold text-[#E77831] mb-12">

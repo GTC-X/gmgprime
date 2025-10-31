@@ -141,7 +141,7 @@
   @apply text-3xl md:text-4xl font-semibold text-accent-700; 
 }
 .text-heading-2 {
-  @apply text-2xl md:text-3xl capitalize font-semibold;
+  @apply text-2xl md:text-3xl capitalize font-semibold text-accent-700;
 }
 
 body {

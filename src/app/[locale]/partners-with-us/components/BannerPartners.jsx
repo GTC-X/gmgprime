@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import CommonButton from "../../components/CommonButton";
 import Link from "next/link";
 
 export default function BannerPartners({
@@ -20,19 +21,20 @@ export default function BannerPartners({
 
       <div className="relative z-10 container mx-auto grid md:grid-cols-2 items-center">
         {/* Left content */}
-        <div className="text-left space-y-5">
-          <h2 className="text-[#ED8946] font-bold leading-tight text-4xl sm:text-5xl 2xl:text-[48px] uppercase max-w-xl">
+        <div className="text-left space-y-4">
+          <h2 className="text-[#ED8946] font-bold leading-tight text-4xl sm:text-5xl 2xl:text-[48px] capitalize max-w-lg">
             Grow together
            with a partner
            that actually helps
           </h2>
 
-          <p className="text-[#fff] text-base sm:text-lg leading-relaxed max-w-md pt-5 pb-8">
+          <p className="text-[#fff] text-base sm:text-lg leading-relaxed max-w-md">
             If you bring quality broker leads or run a network, we’ll give you
             clear tracking, fair rewards and support that makes your life easier.
           </p>
-          <Link href="#" className="bg-accent-400 text-white py-3 px-5 rounded-lg">Become a Partner
-          </Link>
+         <div className="mt-8">
+          <CommonButton>Become a Partner</CommonButton>
+          </div>
         </div>
 
         {/* Right image */}

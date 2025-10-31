@@ -1,97 +1,92 @@
 import Image from "next/image";
+import CommonButton from "../../components/CommonButton";
 
 const whatWeDo = [
-    {
-        title: "FCA-regulated credibility",
-        icon: "/partner/icon1.svg",
-        desc: "You’re introducing a London-based, regulated counterparty"
-    },
-    {
-        title: "Fair CPA",
-        icon: "/partner/icon2.svg",
-        desc: "Earn up to 1,000 USD per qualified referral"
-    },
-    {
-        title: "Co-marketing support",
-        icon: "/partner/icon3.svg",
-        desc: "Joint webinars, case studies and warm intros where appropriate"
-    },
-    {
-        title: "Hands-on onboarding",
-        icon: "/partner/icon4.svg",
-        desc: "Dedicated engineer and RM to get your referrals live faster"
-    },
-    {
-        title: "Real reporting",
-        icon: "/partner/icon5.svg",
-        desc: "Da portal with status, approvals, go-live dates and revenue snapshots "
-    },
+  {
+    title: "FCA-regulated credibility",
+    icon: "/partner/icon1.svg",
+    desc: "You’re introducing a London-based, regulated counterparty",
+  },
+  {
+    title: "Fair CPA",
+    icon: "/partner/icon2.svg",
+    desc: "Earn up to 1,000 USD per qualified referral",
+  },
+  {
+    title: "Co-marketing support",
+    icon: "/partner/icon3.svg",
+    desc: "Joint webinars, case studies and warm intros where appropriate",
+  },
+  {
+    title: "Hands-on onboarding",
+    icon: "/partner/icon4.svg",
+    desc: "Dedicated engineer and RM to get your referrals live faster",
+  },
+  {
+    title: "Real reporting",
+    icon: "/partner/icon5.svg",
+    desc: "Da portal with status, approvals, go-live dates and revenue snapshots ",
+  },
 ];
-const WhyPartner = () => {
-    return (
-        <section className="container py-12 xl:py-16">
-            <h2 className="text-center text-[26px] md:text-[28px] xl:text-[36px] font-bold text-[#F29120] mb-8">
-                Why Partner With GMG Prime</h2>
 
-            <div className="grid gap-6 justify-center lg:grid-cols-2 xl:grid-cols-3">
-                {whatWeDo.map((item) => (
-                    <GradientCard
-                        key={item.title}
-                        title={item.title}
-                        icon={item.icon}
-                        desc={item.desc}
-                    />
-                ))}
-            </div>
+export default function WhyPartner() {
+  return (
+    <section className="container py-10 xl:py-12">
+      {/* Heading */}
+      <h2 className="text-center text-[26px] md:text-[28px] xl:text-[36px] font-bold text-[#F29120] mb-8">
+        Why Partner With GMG Prime
+      </h2>
 
+      {/* Grid: first 3 cards span 4 columns each; last 2 cards span 6 each (like the design) */}
+      <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-8 xl:grid-cols-12">
+        {whatWeDo.map((item, i) => (
+          <WhatWeDoCard
+            key={item.title}
+            title={item.title}
+            icon={item.icon}
+            desc={item.desc}
+            className={
+              i < 3
+                ? "md:col-span-4 xl:col-span-4" // first row (3 items)
+                : "md:col-span-8 xl:col-span-6" // second row (2 wide items)
+            }
+          />
+        ))}
+      </div>
 
-            <div className="mt-8 text-center">
-                <button
-                    type="button"
-                    className="transition-colors bg-[#ED8946] text-[18px] inline-flex items-center gap-1 hover:bg-[#00B8D4] bg-secondary text-white font-medium px-4 py-2 rounded-lg"
-                >
-                    <span>Become a Partner</span>
-                    <svg width="18" height="18" viewBox="0 0 24 24" className="opacity-90">
-                        <path
-                            fill="currentColor"
-                            d="M13.172 12L8.222 7.05l1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
-                        />
-                    </svg>
-                </button>
-            </div>
-        </section>
-    )
+      {/* CTA */}
+      <div className="mt-10 text-center">
+       <CommonButton>Become a Partner</CommonButton>
+      </div>
+    </section>
+  );
 }
 
-export default WhyPartner;
+/* Card to match the screenshot style */
+function WhatWeDoCard({ title, icon, desc, className = "" }) {
+  return (
+    <div
+      className={
+        "rounded-2xl bg-gradient-to-r from-[#162166] via-primary-800 to-[#0c1447] px-6 py-6 md:px-7 md:py-7 shadow-[0_8px_20px_rgba(0,0,0,0.25)] ring-1 ring-white/5 " +
+        className
+      }
+    >
+      <div className="flex items-start gap-4 relative z-50">
+        {/* Icon badge */}
+        <span className="inline-grid h-10 w-10 place-items-center rounded-full">
+          <Image src={icon} alt={title} width={40} height={40} />
+        </span>
 
-
-/* Smooth 3D flip card */
-function GradientCard({
-    title,
-    icon,
-    desc,
-}) {
-    return (
-        <div className="group perspective w-full h-52 md:h-56">
-            <div className="card-inner">
-                {/* FRONT SIDE */}
-                <div className="card-face card-front">
-                    <div className="flex flex-col items-center justify-center gap-4 h-full rounded-2xl bg-primary-950 p-6 xl:p-8 text-center">
-                        <Image src={icon} alt={title} width={48} height={48} />
-                        <p className="font-sofia text-base lg:text-lg/[1.625rem] text-white">
-                            {title}
-                        </p>
-                    </div>
-                </div>
-
-                {/* BACK SIDE */}
-                <div className="card-face card-back">
-                    <p className="text-sm leading-6 text-neutral-200 text-center max-w-[90%]">
-                        {desc}
-                    </p>
-                </div>
-            </div>
+        {/* Text block */}
+        <div>
+          <h3 className="text-[18px] md:text-[20px] font-semibold text-[#F29120]">
+            {title}
+          </h3>
+          <p className="mt-2 text-[14.5px] md:text-[15px] leading-6 text-white/80">
+            {desc}
+          </p>
         </div>
-    );
+      </div>
+    </div>
+  );
 }

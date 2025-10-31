@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const WhoWeServe = () => {
     return (
-        <section className="container py-16 xl:py-24">
+        <section className="container py-16">
             <div className="grid gap-10 xl:grid-cols-2 xl:items-center">
                 <div className="order-2 xl:order-1">
                     <h3 className="text-heading-2 mb-4 font-normal text-[#ED8946]">Who we serve</h3>

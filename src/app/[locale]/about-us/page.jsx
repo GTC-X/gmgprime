@@ -10,9 +10,11 @@ import Technology from "./components/Technology";
 import Leadership from "./components/Leadership";
 import Commitments from "./components/Commitment";
 import Careers from "./components/Careers";
-import Header from "../new-site/components/Header";
-import NewCommonFooter from "../new-site/components/sections/Footer";
 
+import NewCommonFooter from "../new-site/components/sections/Footer";
+import Link from "next/link";
+import GovernanceComplianceSection from "./components/GovernanceComplianceSection";
+import CareersSection from "./components/Careers";
 export const metadata = {
     title: "About us | GMG Prime",
     description:
@@ -27,13 +29,15 @@ export default function AboutPage() {
 
             <WhoWeAre />
             <WhatWeDo />
+                
+            <GovernanceComplianceSection />
             <WhoWeServe />
             <WhoWeWork />
-            <Governance />
+       
             <Technology />
             {/* <Leadership /> */}
             <Commitments />
-            <Careers />
+           <CareersSection />
             <NewCommonFooter />
         </main>
     );

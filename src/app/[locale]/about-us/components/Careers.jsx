@@ -1,29 +1,35 @@
-const Careers = () => {
-    return (
-        <section className="bg-[url('/images/bg.svg')] bg-no-repeat bg-top py-16 xl:py-24">
-            <div className="container text-center">
-                <h3 className="text-heading-2 mb-3 font-normal text-[#ED8946]">Careers</h3>
-                <p className="mx-auto max-w-[760px] text-neutral-300">
-                    We hire people who like solving hard problems for brokers. If you are strong in technology,
-                    operations or client service, we’d love to hear from you.
-                </p>
-                <div className="mt-6">
-                    <button
-                        type="button"
-                        className="transition-colors bg-[#ED8946] text-[18px] inline-flex items-center gap-1 hover:bg-[#00B8D4] bg-secondary text-white font-medium px-4 py-2 rounded-lg"
-                    >
-                        <span>See open roles</span>
-                        <svg width="18" height="18" viewBox="0 0 24 24" className="opacity-90">
-                            <path
-                                fill="currentColor"
-                                d="M13.172 12L8.222 7.05l1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
-                            />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </section>
-    )
-}
+export default function CareersSection({
+  careersUrl = "https://www.linkedin.com/company/109300379"
+}) {
+  return (
+    <section className="container mb-10 mt:mb-14">
+      {/* Gradient border container */}
+      <div className="relative rounded-2xl p-[1px] bg-gradient-to-r from-[#F29B62] to-[#5B67E6]">
+        {/* Inner content box */}
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 rounded-2xl bg-gradient-to-r from-[#162166] via-primary-800 to-[#0c1447] px-6 py-8 md:px-10 md:py-8">
+          {/* Left Text */}
+          <div>
+            <h2 className="text-2xl md:text-2xl font-semibold text-[#F29B62]">
+              Careers
+            </h2>
+            <p className="mt-2 text-sm md:text-base text-white/80 max-w-2xl">
+              We hire people who like solving hard problems for brokers. 
+              If you are a strong fit for technology, operations, or client service, 
+              we would like to hear from you.
+            </p>
+          </div>
 
-export default Careers;
+          {/* Right CTA */}
+          <div className="shrink-0">
+            <a
+              href={careersUrl}
+              className="inline-flex items-center capitalize justify-center rounded-lg bg-[#F29B62] px-6 py-3 text-sm font-medium text-[#0B1C2B] hover:opacity-90 transition"
+            >
+              See open roles
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

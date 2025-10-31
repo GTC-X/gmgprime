@@ -27,6 +27,7 @@ import WhyGrid from './components/WhyGrid';
 import WhoThisIsFor from './components/WhoThisIsFor'
 import WhyPartner from './components/WhyPartner';
 import NewCommonFooter from '../new-site/components/sections/Footer';
+import ReadyToTalkSection from './components/Cta';
 
 export const metadata = {
   title: "Grow together with a partner that actually helps | GMG Prime",
@@ -66,7 +67,7 @@ export default function PartnersPage() {
       </div>
       <ComplianceNote />
       <FAQ />
-      <CTA />
+      <ReadyToTalkSection />
       <NewCommonFooter />
     </main>
   );
