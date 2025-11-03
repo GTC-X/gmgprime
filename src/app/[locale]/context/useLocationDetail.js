@@ -23,6 +23,6 @@ export const useLocationDetail = () => {
     }, []);
     return {
         countryCode,
-        countryData
+        countryData 
     }
 }
