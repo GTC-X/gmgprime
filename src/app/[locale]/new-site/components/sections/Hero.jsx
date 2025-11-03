@@ -37,7 +37,7 @@ export default function Hero() {
     },
   ];
   return (
-    <section className="flex min-h-[900px] items-center overflow-hidden  bg-cover bg-center bg-no-repeat">
+    <section className="flex md:min-h-[900px] items-center overflow-hidden  bg-cover bg-center bg-no-repeat">
       <div
         className="pointer-events-none hidden md:block absolute right-0 top-0 h-full w-full"
         style={{
@@ -48,34 +48,19 @@ export default function Hero() {
         }}
       />
       <div className="container relative">
-        <h1 className="text-[48px] mb-4 text-center font-bold md:text-[60px] leading-[72px] capitalize max-w-xl mx-auto">
+        <h1 className="text-[30px] mb-4 text-center font-bold md:text-[60px] md:leading-[72px] capitalize max-w-xl mx-auto pt-12">
           Prime liquidity for growing brokers
         </h1>
-        <p className="font-sofia font-normal text-base lg:text-lg/[1.625rem] mb-6 text-center text-white">
+        <p className="font-sofia font-normal text-base lg:text-lg/[1.625rem] mb-6 text-center text-white max-w-lg mx-auto">
           Institutional pricing that fits your stage.
           Fast integration, transparent terms, and support that helps you ship.
         </p>
 
-        <div className="flex gap-6 justify-center">
+        <div className="flex gap-6 justify-center pb-8">
           <CommonButton>Book a call</CommonButton>
           <CommonButton variant="ghost"> Request pricing</CommonButton>
         </div>
 
-        <div className="  max-w-5xl py-10 text-center mx-auto text-white">
-          <p className="text-[16px] text-primary leading-relaxed font-semibold pt-2 text-shadow-accent-700 capitalize">
-            Authorised and regulated by the FCA. FRN 744501.<br />
-          </p>
-
-          {/* Disclaimer */}
-          <p className="text-[16px] text-primary leading-relaxed pt-1">
-            CFDs and Spread Bets are complex instruments and come with a high
-            risk of losing money rapidly due to leverage. 65% of retail investor
-            accounts lose money when trading CFDs and Spread Bets with this
-            provider. Consider whether you understand how CFDs and Spread Bets
-            work and whether you can afford to take the high risk of losing your
-            money. There is a possibility of losing all your initial capital.
-          </p>
-        </div>
 
         <FeatureSlider
           items={ITEMS}

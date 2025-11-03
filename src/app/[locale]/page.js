@@ -27,7 +27,7 @@ export default function HomePage() {
       <section className="py-5 border-t border-white/5">
         <div className="container">
           <div className="overflow-hidden rounded-2xl p-px bg-gradient-to-r from-accent-400 via-sky-blue-500 to-accent-400">
-      <div className="rounded-2xl bg-primary-950 bg-gradient-to-r from-[#162166] via-primary-800 to-[#0c1447] p-6 xl:p-10 flex flex-row">
+      <div className="rounded-2xl bg-primary-950 bg-gradient-to-r from-[#162166] via-primary-800 to-[#0c1447] p-6 xl:p-10 flex flex-col md:flex-row gap-4">
         <div className="flex-1">
               <h2 className="text-heading-2 mb-2">For partners and affiliates</h2>
               <p className="text-body-1">
