@@ -129,36 +129,7 @@ export default function ContactUsPage() {
                     </div>
                 </div>
 
-                {/* Important Information */}
-                <div className="overflow-hidden rounded-2xl">
-                    <div className="h-full rounded-2xl bg-primary-950 bg-gradient-to-r from-sky-blue-400/25 via-primary-800 to-primary-800 p-8 xl:p-10 space-y-4">
-                        <h2 className="text-3xl font-normal mb-4">Important Information</h2>
-                        <p className="text-neutral-300">
-                            Global Markets Group Limited trading as gmgmarkets.co.uk and gmgprime.com. Company number 09493910.
-                            Authorised and regulated by the Financial Conduct Authority (FRN 744501).
-                        </p>
-                        <h3 className="text-lg font-medium mt-4">Risk Disclaimer</h3>
-                        <p className="text-neutral-300">
-                            The information on this website is only directed at institutional and professional clients. CFDs and
-                            Spread Bets are highly speculative products which carry a high level of risk and can result in losses
-                            exceeding your deposit. They are not appropriate for every investor. Before deciding to trade, consider
-                            your objectives, financial situation, and level of experience. If in doubt, seek independent advice.
-                        </p>
-                        <h3 className="text-lg font-medium mt-4">Jurisdiction Notice</h3>
-                        <p className="text-neutral-300">
-                            The information on this website is not directed at residents of any jurisdiction where FX and/or CFD
-                            trading is restricted or prohibited by local laws or regulations.
-                        </p>
-                        <h3 className="text-lg font-medium mt-4">Data Protection</h3>
-                        <p className="text-neutral-300">
-                            We process enquiries in line with our{" "}
-                            <a href="/privacy-page" className="text-accent-400 underline hover:text-accent-300">
-                                Privacy Policy
-                            </a>
-                            .
-                        </p>
-                    </div>
-                </div>
+             
             </section>
 
             <NewCommonFooter />

@@ -138,32 +138,40 @@ export default function NewCommonFooter({
 
         {/* Risk Disclaimer */}
         <h3 className="text-[13px] font-semibold text-text-base text-accent-400">Risk Disclaimer</h3>
-        <p className="text-sm">
-          The information on this website is only directed at institutional and{' '}
-          <a href="#professional-status" className="text-sky-400 hover:text-sky-300 underline underline-offset-2">
-            professional clients*
-          </a>
-          . CFDs and Spread Bets are highly speculative products which carry a high level of risk and can result in
-          losses exceeding your deposit. As such, they are not appropriate for every investor. Any information provided
-          shall not be considered as investment advice and has been prepared without considering your individual
-          objectives, financial situation or needs. Before deciding to trade our products, you should carefully consider
-          your objectives, financial situation, and level of experience and risk appetite. If in any doubt, you should
-          seek advice from an independent advisor. Past performance is not indicative of future results.{' '}
-          <a href="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/gmgprime/Risk+Warning+Notice.pdf" target="_blank" className="text-sky-400 hover:text-sky-300 underline underline-offset-2">
-            View full risk warning
-          </a>
-          .
-        </p>
+       <p className="text-sm">
+  The information on this website is only directed at institutional and{' '}
+  <span className="relative group cursor-pointer text-sky-400 hover:text-sky-300 underline underline-offset-2">
+    professional clients*
+    {/* Tooltip box */}
+    <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-[900px] text-xs text-white bg-gradient-to-r from-[#162166] via-primary-800 to-[#0c1447] border border-white/10 p-3 rounded-lg shadow-lg z-10">
+      Clients are able to obtain ‘professional’ status if they demonstrate experience of trading relevant products on
+      their own account above a certain size, experience of working within the financial sector for at least one year in
+      a relevant position, and/or a personal investment portfolio worth at least €500,000.
+    </span>
+  </span>
+  . CFDs and Spread Bets are highly speculative products which carry a high level of risk and can result in losses
+  exceeding your deposit. As such, they are not appropriate for every investor. Any information provided shall not be
+  considered as investment advice and has been prepared without considering your individual objectives, financial
+  situation or needs. Before deciding to trade our products, you should carefully consider your objectives, financial
+  situation, and level of experience and risk appetite. If in any doubt, you should seek advice from an independent
+  advisor. Past performance is not indicative of future results.{' '}
+  <a
+    href="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/gmgprime/Risk+Warning+Notice.pdf"
+    target="_blank"
+    className="text-sky-400 hover:text-sky-300 underline underline-offset-2"
+  >
+    View full risk warning
+  </a>
+  .
+</p>
+
 
         {/* Jurisdiction Notice */}
         <h3 className="text-[13px] font-semibold text-text-base text-accent-400">Jurisdiction Notice</h3>
         <p className="text-sm">
           The information on this website is not directed at residents of any jurisdiction where FX trading and/or CFD trading is restricted or prohibited by local laws or regulations.        </p>
 
-        {/* Professional Client Info (footnote) */}
-        <div id="professional-status" className="text-[13px] text-text-mute/90 border-l-2 border-sky-400 pl-4 text-sm leading-7">
-          Clients are able to obtain ‘professional’ status if they demonstrate experience of trading relevant products on their own account above a certain size, experience of working within the financial sector for at least one year in a relevant position, and/or a personal investment portfolio worth at least €500,000.
-        </div>
+       
         <div className="pt-4  flex justify-between flex-wrap items-center">
           <p className="text-[13px] text-text-base">© 2024 Global Markets Group Limited | @{year} gmgprime.com | All rights reserved.</p>
           <a href="/privacy-page" target="_blank" className="text-sky-400 hover:text-sky-300 underline underline-offset-2">
