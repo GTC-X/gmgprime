@@ -1,4 +1,5 @@
 /* Our governance & compliance — matches the attached "How Onboarding Works" layout */
+import Link from "next/link";
 import CommonButton from "../../components/CommonButton";
 export default function GovernanceComplianceSection({
   disclosuresUrl = "/disclosures"
@@ -49,8 +50,16 @@ export default function GovernanceComplianceSection({
               <div>
                 <h3 className="font-semibold text-white">Policies available</h3>
                 <p className="mt-1 text-white/70">
-                  Risk Disclosure, Client Categorisation, Conflicts of Interest,
-                  Complaints Handling and Disputes, Privacy Policy.
+                  <a href="GLOBAL-MARKETS-GROUP_ORDER_EXECUTION_POLICY.pdf" target="_blank" rel="noopener noreferrer" className="text-sky-400 hover:text-sky-300 underline underline-offset-2">
+                    Risk Disclosure</a>,{" "}
+                  <a href="GLOBAL-MARKETS-GROUP_CLIENT-CATEGORISATION-POLICY.pdf" target="_blank" rel="noopener noreferrer" className="text-sky-400 hover:text-sky-300 underline underline-offset-2">
+                    Client Categorisation</a>,{" "}
+                  <a href="GLOBAL-MARKETS-GROUP-LIMITED_COMPLAINTS_HANDLING_AND_DISPUTES_PROCEDURE_AND_POLICY-1.pdf" target="_blank" rel="noopener noreferrer" className="text-sky-400 hover:text-sky-300 underline underline-offset-2">
+                    Conflicts of Interest</a>,{" "}
+                  <a href="GLOBAL-MARKETS-GROUP-LIMITED_CONFLICTS_OF_INTEREST_POLICY.pdf" target="_blank" rel="noopener noreferrer" className="text-sky-400 hover:text-sky-300 underline underline-offset-2">
+                    Complaints Handling and Disputes</a>,{" "}
+                  <a href="/privacy-page" target="_blank" rel="noopener noreferrer" className="text-sky-400 hover:text-sky-300 underline underline-offset-2">
+                    Privacy Policy.</a>
                 </p>
               </div>
             </div>
@@ -70,9 +79,9 @@ export default function GovernanceComplianceSection({
           </div>
 
           {/* CTA */}
-         <div className="mt-8">
-        <CommonButton>Register to Explore More</CommonButton>
-                            </div>
+          <div className="mt-8">
+            <CommonButton>Register to Explore More</CommonButton>
+          </div>
         </div>
       </div>
     </section>
