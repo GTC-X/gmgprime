@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function BannerPartners({
   bgImage = "/partner/banner-overlay.webp",          // replace with your background
-  peopleImage = "/partner/notes.jpg" // replace with your right image
+  peopleImage = "/partner/partner.webp" // replace with your right image
 }) {
   return (
     <section className="relative overflow-hidden">

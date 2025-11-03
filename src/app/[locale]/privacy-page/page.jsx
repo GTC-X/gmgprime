@@ -27,7 +27,7 @@ const sections = [
 export default function PrivacyPolicyPage() {
     return (
         <>
-      
+
             <main className=" text-white">
                 {/* Hero */}
                 <section className="relative overflow-hidden">
@@ -71,13 +71,13 @@ export default function PrivacyPolicyPage() {
                                 <div className="rounded-2xl bg-primary-950 p-6">
                                     <h3 className="text-heading-3 mb-2">Questions?</h3>
                                     <p className="text-neutral-400 text-sm">
-                                         <a
+                                        <a
                                             className="underline hover:text-accent-400 break-words"
                                             href="mailto:compliance_team@gmgmarkets.co.uk"
                                         >
                                             compliance_team@gmgmarkets.co.uk
                                         </a>{" "}
-                                        <br/> <span className="text-white">(+44) 0203 865 3306</span>.
+                                        <br /> <span className="text-white">(+44) 0203 865 3306</span>.
                                     </p>
                                 </div>
                             </div>
@@ -333,10 +333,11 @@ function PolicyCard({
 }) {
     return (
         <section id={id} className="overflow-hidden rounded-2xl">
-    <div className="overflow-hidden rounded-2xl p-px bg-gradient-to-r from-[#265B9F] via-primary-800 to-accent-400">
-          <div className="h-full rounded-2xl bg-primary-950 bg-gradient-to-r from-primary-800 via-primary-800 to-primary-800 p-8 xl:p-8">                <h2 className="text-heading-2 mb-4">{title}</h2>
-                <div className="text-body-1 text-neutral-300">{children}</div>
-            </div>
+            <div className="overflow-hidden rounded-2xl p-px bg-gradient-to-r from-[#265B9F] via-primary-800 to-accent-400">
+                <div className="h-full rounded-2xl bg-primary-950 bg-gradient-to-r from-primary-800 via-primary-800 to-primary-800 p-8 xl:p-8">
+                    <h2 className="md:text-[20px] text-[18px] text-accent-400 font-semibold mb-4">{title}</h2>
+                    <div className="text-body-1 text-neutral-300">{children}</div>
+                </div>
             </div>
         </section>
     );
