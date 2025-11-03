@@ -17,7 +17,7 @@ export default function WhatYouGet() {
         { title: "Attribution Tools", desc: "Unique links, QR, postbacks and dashboards.", img: "/partner/what-icon2.svg" },
         { title: "Creatives Kit", desc: "Ready-to-use banners, emails, and landing pages.", img: "/partner/what-icon3.svg" },
         { title: "Event Support", desc: "Co-branded events & local workshops.", img: "/partner/what-icon4.svg" },
-        { title: "Priority Onboarding", desc: "Faster KYC and personalized support.", img: "/partner/what-icon5.svg" },
+        { title: "Priority Onboarding", desc: "Smooth KYC process and personalised support", img: "/partner/what-icon5.svg" },
     ];
     return (
         <section className="relative">

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function BannerPartners({
   bgImage = "/partner/banner-overlay.webp",          // replace with your background
-  peopleImage = "/partner/partner.webp" // replace with your right image
+  peopleImage = "/partner/notes.jpg" // replace with your right image
 }) {
   return (
     <section className="relative overflow-hidden">
@@ -29,7 +29,7 @@ export default function BannerPartners({
           </h2>
 
           <p className="text-[#fff] text-base sm:text-lg leading-relaxed max-w-md">
-            If you bring quality broker leads or run a network, we’ll give you
+            If you bring quality broker leads or run an affiliate  network, we’ll give you
             clear tracking, fair rewards and support that makes your life easier.
           </p>
          <div className="mt-8">

@@ -3,7 +3,7 @@ export default function NewCommonFooter({
   companyNumber = "09493910",
   fcaRef = "744501",
   address = "Green Park House, 15 Stratton Street, London W1J 8LQ, UK", // Registered Office
-  principalOffice = "The Jellicoe, 5 Beaconsfield Street, King’s Cross, London, N1C 4EW",
+  principalOffice = "The Jellicoe, 5 Beaconsfield Street, King’s Cross, London N1C 4EW, UK",
   email = "info@gmgmarkets.co.uk",
   phone = "+44 203 865 3306",
   year = new Date().getFullYear(),
@@ -102,12 +102,12 @@ export default function NewCommonFooter({
       <div className="container">
         <div className="border-t border-white/10" />
       </div>
- {/* Secondary Trust Band */}
+      {/* Secondary Trust Band */}
       <div className="container py-6 text-[14px] leading-7">
         <h3 className="text-[16px] font-semibold text-text-base">Secondary Trust Band</h3>
         <p className="text-text-mute">
-          Global Markets Group Limited. Trading name <span className="text-text-base">gmgmarkets.co.uk</span>. Company number{" "}
-          {companyNumber}. Authorised and regulated by the Financial Conduct Authority. FRN {fcaRef}.
+          Global Markets Group Limited operates under trading name gmgmarkets.co.uk and gmgprime.com.  Registered in England & Wales with company number 09493910. Authorised and regulated by the Financial Conduct Authority (FRN 744501).
+
         </p>
       </div>
       {/* Regulatory text */}
@@ -139,9 +139,9 @@ export default function NewCommonFooter({
         {/* Risk Disclaimer */}
         <h3 className="text-[13px] font-semibold text-text-base text-accent-400">Risk Disclaimer</h3>
         <p className="text-sm">
-          The information on this website is only directed at{' '}
+          The information on this website is only directed at institutional and{' '}
           <a href="#professional-status" className="text-sky-400 hover:text-sky-300 underline underline-offset-2">
-            institutional and professional clients
+            professional clients*
           </a>
           . CFDs and Spread Bets are highly speculative products which carry a high level of risk and can result in
           losses exceeding your deposit. As such, they are not appropriate for every investor. Any information provided
@@ -158,17 +158,18 @@ export default function NewCommonFooter({
         {/* Jurisdiction Notice */}
         <h3 className="text-[13px] font-semibold text-text-base text-accent-400">Jurisdiction Notice</h3>
         <p className="text-sm">
-          The information on this site is not directed at residents of the United States, Japan, Canada, Belgium or any other jurisdiction where distribution or use would be contrary to local law or regulation. You must be of minimum legal age as determined by your country of origin to use services on this website.
-        </p>
+          The information on this website is not directed at residents of any jurisdiction where FX trading and/or CFD trading is restricted or prohibited by local laws or regulations.        </p>
 
         {/* Professional Client Info (footnote) */}
         <div id="professional-status" className="text-[13px] text-text-mute/90 border-l-2 border-sky-400 pl-4 text-sm leading-7">
-          Clients are able to obtain ‘professional’ status if they demonstrate experience of trading relevant products on
-          their own account above a certain size, experience of working within the financial sector for at least one year
-          in a relevant position, and/or a personal investment portfolio worth at least €500,000.
+          Clients are able to obtain ‘professional’ status if they demonstrate experience of trading relevant products on their own account above a certain size, experience of working within the financial sector for at least one year in a relevant position, and/or a personal investment portfolio worth at least €500,000.
         </div>
-
-        <p className="pt-4 text-[13px] text-text-base">© {year} {companyName} | All rights reserved.</p>
+        <div className="pt-4  flex justify-between flex-wrap items-center">
+          <p className="text-[13px] text-text-base">© 2024 Global Markets Group Limited | @{year} gmgprime.com | All rights reserved.</p>
+          <a href="/privacy-page" target="_blank" className="text-sky-400 hover:text-sky-300 underline underline-offset-2">
+           Privacy Policy
+          </a>
+        </div>
       </div>
     </footer>
   );

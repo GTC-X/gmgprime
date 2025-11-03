@@ -47,7 +47,10 @@ export default function Page() {
                         <div className="flex-1">
                             <h2 className="text-heading-2 mb-2">Latency and Proximity</h2>
                             <p className="text-body-1">
-                                CPA available for qualified partners, with tracking tools and co-marketing support. Up to 1,000 USD per referral.
+                                Close to the price sessions anchored in LD4 with proximity hosting options
+                            </p>
+                            <p className="text-body-1">
+                                Predictable round trips engineered routes and throttles that keep flows smooth during busy sessions.
                             </p>
                         </div>
                         <div>

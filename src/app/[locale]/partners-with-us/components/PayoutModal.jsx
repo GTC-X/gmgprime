@@ -31,6 +31,7 @@
 
 import SectionTitle from "./SectionTitle";
 import Button from "./Button";
+import CommonButton from "../../components/CommonButton";
 function KiteCard({ title, desc, icon = "💠", slope = "down-right" }) {
     // slope: "down-right" (left high → right low) or "down-left"
     const clip =
@@ -69,13 +70,13 @@ export default function PayoutKite() {
                     <KiteCard
                         slope="down-left"
                         icon="/partner/payout1.svg"
-                        title="CPA up to 1,000 USD per referral based on agreed milestones"
+                        title="CPA up to 1,500 USD per referral based on agreed milestones"
                         desc=""
                     />
                     <KiteCard
                         slope="down-right"
                         icon="/partner/payout2.svg"
-                        title="Volume accelerators: optional tiers for partners who deliver consistent quality"
+                        title="Optional tiers for affiliate partners who deliver consistent quality"
                         desc=""
                     />
                     <KiteCard
@@ -87,12 +88,12 @@ export default function PayoutKite() {
                 </div>
 
                 {/* tiny line under tiles like screenshot */}
-                <p className="mx-auto mt-6 max-w-xl text-center text-[11.5px] text-white/70">
+                {/* <p className="mx-auto mt-6 max-w-xl text-center text-[11.5px] text-white/70">
                     Note: full terms are shared in the <span className="font-semibold text-white">Partner Agreement</span>.
-                </p>
+                </p> */}
 
                 <div className="mt-4 text-center">
-                    <Button>Request Payout Tiers</Button>
+                    <CommonButton>Request Affiliate Agreement</CommonButton>
                 </div>
             </div>
         </section>

@@ -145,8 +145,8 @@ const sections = [
         title: "Partners & affiliates",
         items: [
             {
-                q: "Do you have a partner programme?",
-                a: "Yes. CPA for qualified partners with tracking tools and co-marketing support. Up to USD 1,000 per referral, with terms in the Partner Agreement.",
+                q: "Do you have an affiliate partner programme?",
+                a: "Yes. CPA for qualified affiliate partners with tracking tools and co-marketing support. Up to USD 1,500 per referral, with terms in the Affiliate Agreement.",
             },
             {
                 q: "How is attribution handled?",
@@ -313,6 +313,12 @@ export default function FaqPage() {
                             <div className="rounded-2xl bg-primary-800 p-6">
                                 <p className="text-body-2">
                                     Still need help? Email{" "}
+                                    <a
+                                        className="text-accent-400 underline"
+                                        href="mailto:support@gmgprime.com"
+                                    >
+                                        support@gmgprime.com
+                                    </a>, {" "}
                                     <a
                                         className="text-accent-400 underline"
                                         href="mailto:compliance_team@gmgmarkets.co.uk"

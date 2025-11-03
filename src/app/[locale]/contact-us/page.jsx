@@ -107,7 +107,7 @@ export default function ContactUsPage() {
                             <div>
                                 <h3 className="font-medium text-lg mb-1">Principal Office</h3>
                                 <p className="text-neutral-300">
-                                    The Jellicoe, 5 Beaconsfield Street, King’s Cross, London, N1C 4EW
+                                   The Jellicoe, 5 Beaconsfield Street, King’s Cross, London N1C 4EW, UK
                                 </p>
                                 <h3 className="font-medium text-lg mt-4 mb-1">Registered Office</h3>
                                 <p className="text-neutral-300">Green Park House, 15 Stratton Street, London, W1J 8LQ</p>

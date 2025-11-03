@@ -5,12 +5,12 @@ const whatWeDo = [
   {
     title: "FCA-regulated credibility",
     icon: "/partner/icon1.svg",
-    desc: "You’re introducing a London-based, regulated counterparty",
+    desc: "London-based, regulated counterparty",
   },
   {
     title: "Fair CPA",
     icon: "/partner/icon2.svg",
-    desc: "Earn up to 1,000 USD per qualified referral",
+    desc: "Earn up to 1,500 USD per qualified referral",
   },
   {
     title: "Co-marketing support",
@@ -25,7 +25,7 @@ const whatWeDo = [
   {
     title: "Real reporting",
     icon: "/partner/icon5.svg",
-    desc: "Da portal with status, approvals, go-live dates and revenue snapshots ",
+    desc: "Go-live dates, approvals and payouts status.",
   },
 ];
 

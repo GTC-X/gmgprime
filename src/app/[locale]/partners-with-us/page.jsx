@@ -65,8 +65,8 @@ export default function PartnersPage() {
         <PayoutModel />
         <CoMarketing />
       </div>
-      <ComplianceNote />
-      <FAQ />
+      {/* <ComplianceNote />
+      <FAQ /> */}
       <ReadyToTalkSection />
       <NewCommonFooter />
     </main>

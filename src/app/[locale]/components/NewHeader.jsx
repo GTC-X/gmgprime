@@ -1,109 +1,3 @@
-// import React from "react";
-// import Image from "next/image";
-
-// export default function NewBanner() {
-//     return (
-//         <section className="w-full bg-white text-[#0A2640] font-[Poppins]">
-//             {/* Hero Section */}
-//             <div className="container mx-auto px-6 lg:px-10 py-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-//                 {/* Left content */}
-//                 <div className="space-y-6">
-//                     <h1 className="text-[60px] font-bold text-primary leading-tight">
-//                         Prime liquidity for <br />
-//                         <span className="text-[#0A2640]">growing brokers</span>
-//                     </h1>
-//                     <p className="text-primary text-[22px] leading-relaxed max-w-md">
-//                         Institutional pricing that fits your stage. Fast integration,
-//                         transparent terms, and support that helps you ship.
-//                     </p>
-
-//                     {/* Buttons */}
-//                     <div className="flex gap-4 pt-2">
-//                         <button className="transition-colors min-w-44 hover:bg-secondary bg-secondary text-white font-medium px-4 py-2 rounded-lg">
-//                             Book a call
-//                         </button>
-//                         <button className="transition-colors min-w-44 hover:bg-[#265B9F] bg-[#265B9F] text-white font-medium px-4 py-2 rounded-lg">
-//                             Request pricing
-//                         </button>
-//                     </div>
-//                     <div>
-//                         <p className="text-[16px] text-primary leading-relaxed font-semibold max-w-lg pt-2">
-//                             Authorised and regulated by the FCA. FRN 744501.<br />
-
-//                         </p>
-//                         {/* Disclaimer */}
-//                         <p className="text-[16px] text-primary leading-relaxed max-w-lg pt-1">
-//                             CFDs and Spread Bets are complex instruments and come with a high
-//                             risk of losing money rapidly due to leverage. 65% of retail investor
-//                             accounts lose money when trading CFDs and Spread Bets with this
-//                             provider. Consider whether you understand how CFDs and Spread Bets
-//                             work and whether you can afford to take the high risk of losing your
-//                             money. There is a possibility of losing all your initial capital.
-//                         </p>
-//                     </div>
-//                 </div>
-
-//                 {/* Right image */}
-//                 <div className="relative flex justify-center lg:justify-end">
-//                     <div className="relative w-full h-[450px]">
-//                         <Image
-//                             src="/new/banner.png" // replace with your actual image path
-//                             alt="Trading Screens"
-//                             fill
-//                             className="object-contain"
-//                         />
-//                     </div>
-//                 </div>
-//             </div>
-
-//             {/* Bottom Feature Bar */}
-//             <div className="bg-primary rounded-2xl container mx-auto text-white">
-//                 <div className=" px-6 py-6 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
-//                     <div className="flex flex-col items-center">
-//                         <img src="/new/icon1.svg" alt="" className="w-10 h-10 mb-2" />
-//                         <p className="text-sm leading-snug">
-//                             Right-sized liquidity designed for institutional quality with
-//                             entry-friendly terms.
-//                         </p>
-//                     </div>
-//                     <div className="flex flex-col items-center">
-//                         <img src="/new/icon2.svg" alt="" className="w-10 h-10 mb-2" />
-//                         <p className="text-sm leading-snug">
-//                             Transparent pricing simple commissions or markup with no platform
-//                             surprises.
-//                         </p>
-//                     </div>
-//                     <div className="flex flex-col items-center">
-//                         <img src="/new/icon3.svg" alt="" className="w-10 h-10 mb-2" />
-//                         <p className="text-sm leading-snug">
-//                             Custom streams for servers that just “tick”: fulls, tune per symbol.
-//                         </p>
-//                     </div>
-//                     <div className="flex flex-col items-center">
-//                         <img src="/new/icon4.svg" alt="" className="w-10 h-10 mb-2" />
-//                         <p className="text-sm leading-snug">
-//                             Fast go-live guided FIX connections and MT5 integrations.
-//                         </p>
-//                     </div>
-//                     <div className="flex flex-col items-center">
-//                         <img src="/new/icon5.svg" alt="" className="w-10 h-10 mb-2" />
-//                         <p className="text-sm leading-snug">
-//                             Low latency in LD4 class-connect options and resilient setup.
-//                         </p>
-//                     </div>
-//                     <div className="flex flex-col items-center">
-//                         <img src="/new/icon6.svg" alt="" className="w-10 h-10 mb-2" />
-//                         <p className="text-sm leading-snug">
-//                             Real-time TCA and reporting for full liquidity, costs and
-//                             slippage checks.
-//                         </p>
-//                     </div>
-//                 </div>
-//             </div>
-//         </section>
-//     );
-// }
-
 "use client"
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
@@ -160,7 +54,7 @@ export default function NewBanner() {
             </button>
           </div>
 
-          <div>
+          {/* <div>
             <p className="text-[16px] text-primary leading-relaxed font-semibold max-w-lg pt-2">
               Authorised and regulated by the FCA. FRN 744501.<br />
             </p>
@@ -174,7 +68,7 @@ export default function NewBanner() {
               work and whether you can afford to take the high risk of losing your
               money. There is a possibility of losing all your initial capital.
             </p>
-          </div>
+          </div> */}
         </div>
 
         {/* Right image */}

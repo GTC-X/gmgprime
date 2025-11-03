@@ -96,7 +96,7 @@ export default function PrivacyPolicyPage() {
                                     <div>
                                         <h4 className="text-subtitle-1 mb-2">Principal Office</h4>
                                         <p className="text-neutral-400">
-                                            The Jellicoe, 5 Beaconsfield Street, King’s Cross, London, N1C 4EW
+                                            The Jellicoe, 5 Beaconsfield Street, King’s Cross, London N1C 4EW, UK
                                         </p>
                                     </div>
                                     <div>

@@ -322,7 +322,7 @@ const TradeForm = ({ zapierUrl, successPath, page = "" }) => {
                                 </p>
                             )}
                             <div
-                                className="absolute top-9 bg-primary ltr:right-3 rtl:left-3 rounded-md cursor-pointer text-white  py-1.5 px-2"
+                                className="absolute top-9 bg-accent-400 ltr:right-3 rtl:left-3 rounded-md cursor-pointer text-white  py-1.5 px-2"
                                 onClick={() => {
                                     sendVerificationCode();
                                 }}
@@ -396,7 +396,7 @@ const TradeForm = ({ zapierUrl, successPath, page = "" }) => {
                             name="phone"
                             international
                             countryCallingCodeEditable={false}
-                            defaultCountry={countryData?.country || "AE"}
+                            defaultCountry={"GB"}
                             value={formik.values.phone}
                             onChange={(phone) => formik.setFieldValue("phone", phone)}
                             className={`flex w-full overflow-hidden rounded-md text-base border border-[#ffffff1a] bg-[#1A1A47] phone-setting text-white focus:outline-none
@@ -431,7 +431,8 @@ const TradeForm = ({ zapierUrl, successPath, page = "" }) => {
                         options={options}
                         classNamePrefix="react-select"
                         onChange={(selectedOption) =>
-                            formik.setFieldValue("country", selectedOption?.value)
+                            formik.
+                                setFieldValue("country", selectedOption?.value)
                         }
                         onBlur={() => formik.setFieldTouched("country", true)}
                         value={options.find((opt) => opt.value === formik.values.country)} // ✅ ADD THIS LINE
@@ -471,15 +472,6 @@ const TradeForm = ({ zapierUrl, successPath, page = "" }) => {
                 </div>
 
                 <div className="mb-5">
-                    <label
-                        className={`block text-sm pb-2 ${formik.touched.terms && formik.errors.terms ? "text-red-500" : ""
-                            }`}
-                        htmlFor="terms"
-                    >
-                        {formik.touched.terms && formik.errors.terms
-                            ? formik.errors.terms
-                            : t("termsLabel")}
-                    </label>
                     <div className="flex items-start gap-1">
                         <input
                             type="checkbox"
@@ -491,34 +483,17 @@ const TradeForm = ({ zapierUrl, successPath, page = "" }) => {
                             className="h-5 w-5"
                         />
                         <p className="inline text-xs md:text-[13px] leading-normal">
-                            {t("termsText")}
+                            I confirm that have read and agree to the {" "}
                             <a
                                 className="text-secondary underline"
-                                href="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/pdf-files/Vanuatu.pdf"
+                                href="/privacy-page"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                {t("clientAgreement")}
+                                Privacy Policy
                             </a>{" "}
-                            & the{" "}
-                            <a
-                                href={
-                                    {
-                                        ar: "/ar/privacy-policy",
-                                        ru: "/ru/privacy-policy",
-                                        cn: "/cn/privacy-policy",
-                                        vi: "/vi/privacy-policy",
-                                        es: "/es/privacy-policy",
-                                        pt: "/pt/privacy-policy",
-                                    }[locale] || "/privacy-policy"
-                                }
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-secondary underline ml-1"
-                            >
-                                {t("privacyPolicy")}
-                            </a>
-                            , {t("conset")}.
+                            , I consent to Global Markets Group Limited contacting me at reasonable times.
+
                         </p>
                     </div>
                 </div>

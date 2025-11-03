@@ -6,7 +6,7 @@ export default function WhoThisIsFor({
   items = [
     {
       icon: "users",
-      text: "IB networks focused on start-up and SMB brokerages",
+      text: "Affiliate networks focused on start-up and SMB brokerages",
     },
     {
       icon: "antenna",
