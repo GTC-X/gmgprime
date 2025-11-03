@@ -19,7 +19,7 @@ export const useLocationDetail = () => {
                 });
         };
 
-        fetchGeoInfo();
+        fetchGeoInfo(); 
     }, []);
     return {
         countryCode,
