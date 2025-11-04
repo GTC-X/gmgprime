@@ -185,12 +185,7 @@ const sections = [
 ];
 
 const important = {
-    id: "important",
-    title: "Important information",
-    risk:
-        "The information on this website is only directed at institutional and professional clients. CFDs and Spread Bets are highly speculative and can result in losses exceeding your deposit. This is not investment advice. Consider your objectives, financial situation, experience and risk appetite. Seek independent advice if in doubt. Past performance is not indicative of future results.",
-    jurisdiction:
-        "The information on this website is not directed at residents of any jurisdiction where FX and/or CFD trading is restricted or prohibited by local laws or regulations.",
+   
 };
 
 export default function FaqPage() {
@@ -287,52 +282,8 @@ export default function FaqPage() {
                             />
                         ))}
 
-                        {/* Important information */}
-                        <div id={important.id} className="space-y-4">
-                            <h2 className="text-heading-2">Important information</h2>
-
-                            {/* Risk disclaimer card */}
-                            <div className="overflow-hidden rounded-2xl p-px bg-[linear-gradient(66deg,var(--tw-gradient-stops))] from-accent-400 via-sky-blue-500 to-sky-blue-600">
-                                <div className="rounded-2xl bg-[#132F47] p-6">
-                                    <h3 className="text-heading-3 mb-2">Risk Disclaimer</h3>
-                                    <p className="text-neutral-400 text-body-2">{important.risk}</p>
-                                </div>
-                            </div>
-
-                            {/* Jurisdiction notice card */}
-                            <div className="overflow-hidden rounded-2xl p-px bg-[linear-gradient(66deg,var(--tw-gradient-stops))] from-accent-400 via-sky-blue-500 to-sky-blue-600">
-                                <div className="rounded-2xl bg-[#132F47] p-6">
-                                    <h3 className="text-heading-3 mb-2">Jurisdiction notice</h3>
-                                    <p className="text-neutral-400 text-body-2">
-                                        {important.jurisdiction}
-                                    </p>
-                                </div>
-                            </div>
-
-                            {/* Contact help */}
-                            <div className="rounded-2xl bg-primary-800 p-6">
-                                <p className="text-body-2">
-                                    Still need help? Email{" "}
-                                    <a
-                                        className="text-accent-400 underline"
-                                        href="mailto:support@gmgprime.com"
-                                    >
-                                        support@gmgprime.com
-                                    </a>, {" "}
-                                    <a
-                                        className="text-accent-400 underline"
-                                        href="mailto:compliance_team@gmgmarkets.co.uk"
-                                    >
-                                        compliance_team@gmgmarkets.co.uk
-                                    </a>{" "}
-                                    or{" "}
-                                    <a className="text-accent-400 underline" href="/contact">
-                                        book a call
-                                    </a>
-                                    .
-                                </p>
-                            </div>
-                        </div>
+                        
+                 
                     </div>
                 </div>
             </section>

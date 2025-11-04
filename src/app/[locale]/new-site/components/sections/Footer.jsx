@@ -9,6 +9,7 @@ export default function NewCommonFooter({
   year = new Date().getFullYear(),
 }) {
   return (
+    <>
     <footer className="bg-navy-950 text-text-base">
       {/* Top divider */}
       <div className="container">
@@ -143,7 +144,7 @@ export default function NewCommonFooter({
   <span className="relative group cursor-pointer text-sky-400 hover:text-sky-300 underline underline-offset-2">
     professional clients*
     {/* Tooltip box */}
-    <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-[900px] text-xs text-white bg-gradient-to-r from-[#162166] via-primary-800 to-[#0c1447] border border-white/10 p-3 rounded-lg shadow-lg z-10">
+    <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute bottom-full left-1/2 -translate-x-1/2 mb-2 md:w-[900px] text-xs text-white bg-gradient-to-r from-[#162166] via-primary-800 to-[#0c1447] border border-white/10 p-3 rounded-lg shadow-lg z-10">
       Clients are able to obtain ‘professional’ status if they demonstrate experience of trading relevant products on
       their own account above a certain size, experience of working within the financial sector for at least one year in
       a relevant position, and/or a personal investment portfolio worth at least €500,000.
@@ -172,13 +173,50 @@ export default function NewCommonFooter({
           The information on this website is not directed at residents of any jurisdiction where FX trading and/or CFD trading is restricted or prohibited by local laws or regulations.        </p>
 
        
-        <div className="pt-4  flex justify-between flex-wrap items-center">
-          <p className="text-[13px] text-text-base">© 2024 Global Markets Group Limited | @{year} gmgprime.com | All rights reserved.</p>
-          <a href="/privacy-page" target="_blank" className="text-sky-400 hover:text-sky-300 underline underline-offset-2">
-           Privacy Policy
-          </a>
-        </div>
+        <div className="pt-4 flex justify-center flex-wrap items-center">
+  <div className="flex flex-wrap justify-center items-center gap-3 mt-4">
+    {[
+      {
+        title: "Risk Disclosure",
+        href: "GLOBAL-MARKETS-GROUP_ORDER_EXECUTION_POLICY.pdf",
+      },
+      {
+        title: "Client Categorisation",
+        href: "GLOBAL-MARKETS-GROUP_CLIENT-CATEGORISATION-POLICY.pdf",
+      },
+      {
+        title: "Conflicts of Interest",
+        href: "GLOBAL-MARKETS-GROUP-LIMITED_CONFLICTS_OF_INTEREST_POLICY.pdf",
+      },
+      {
+        title: "Complaints Handling & Disputes",
+        href: "GLOBAL-MARKETS-GROUP-LIMITED_COMPLAINTS_HANDLING_AND_DISPUTES_PROCEDURE_AND_POLICY-1.pdf",
+      },
+      {
+        title: "Privacy Policy",
+        href: "/privacy-page",
+      },
+    ].map(({ title, href }) => (
+      <a
+        key={title}
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="px-4 py-2 text-sm font-medium text-white bg-accent-400 hover:bg-primary-800 rounded-lg shadow transition"
+      >
+        {title}
+      </a>
+    ))}
+  </div>
+</div>
+
       </div>
     </footer>
+   <div className="bg-white text-center text-xs text-black py-4">
+          <div className="container">
+            © 2024 Global Markets Group Limited | @2025 gmgprime.com | All rights reserved.
+          </div>
+   </div>
+    </>
   );
 }
