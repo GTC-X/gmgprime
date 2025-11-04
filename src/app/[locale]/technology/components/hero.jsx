@@ -16,9 +16,9 @@ export default function Hero() {
             <div className="container relative grid gap-10 py-16 md:grid-cols-2 md:py-20 lg:py-24">
                 {/* Left */}
                 <div className="max-w-[520px]">
-                    <h1 className="text-heading-1 text-[#E77831] font-semibold">
+                    <h2 className=" text-heading-1 text-[#E77831] font-semibold">
                         Built on proven <br /> infrastructure
-                    </h1>
+                    </h2>
                     <p className="mt-4 text-[20px] leading-7 text-text-mute">
                         You want low latency, stability and deep <br className="hidden md:block" />
                         connectivity. Our customizable, private L1/2 <br className="hidden md:block" />

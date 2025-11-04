@@ -86,9 +86,7 @@ export default function PayoutKite() {
                 </div>
 
 
-                <div className="mt-4 text-center">
-                    <Button>Plan a Campaign</Button>
-                </div>
+              
             </div>
         </section>
     );

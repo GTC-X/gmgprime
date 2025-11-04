@@ -1,5 +1,3 @@
-import Link from "next/link";
-import FeatureLinks from "./FeatureLinks";
 import FeatureSlider from "./Slider";
 import CommonButton from "../../../components/CommonButton";
 
@@ -9,37 +7,45 @@ export default function Hero() {
       src: "/new/icon1.svg",
       title: "Right-sized liquidity",
       text: "Designed for institutional quality with entry-friendly terms.",
+      href: "/technology",
     },
     {
       src: "/new/icon2.svg",
       title: "Transparent pricing",
       text: "Simple commissions or markup with no platform surprises.",
+      href: "/technology",
     },
     {
       src: "/new/icon3.svg",
       title: "Custom streams",
       text: "Servers that just “tick”: fulls, tune per symbol.",
+      href: "/technology",
     },
     {
       src: "/new/icon4.svg",
       title: "Fast go-live",
       text: "Guided FIX connections and MT5 integrations.",
+      href: "/technology",
     },
     {
       src: "/new/icon5.svg",
       title: "Low latency in LD4",
       text: "Cross-connect options and resilient setup.",
+      href: "/technology",
     },
     {
       src: "/new/icon6.svg",
       title: "Real-time TCA & reporting",
       text: "Full liquidity, costs and slippage checks in a click.",
+      href: "/technology",
     },
   ];
+
   return (
-    <section className="flex md:min-h-[900px] items-center overflow-hidden  bg-cover bg-center bg-no-repeat">
+    <section className="relative flex items-center overflow-hidden bg-cover bg-center bg-no-repeat md:min-h-[800px]">
+      {/* Background image (desktop only) */}
       <div
-        className="pointer-events-none hidden md:block absolute right-0 top-0 h-full w-full"
+        className="pointer-events-none absolute inset-0 hidden md:block"
         style={{
           backgroundImage: "url('/new/bg-new1.png')",
           backgroundSize: "cover",
@@ -47,33 +53,34 @@ export default function Hero() {
           backgroundPosition: "center right",
         }}
       />
+
       <div className="container relative">
-        <h1 className="text-[30px] mb-4 text-center font-bold md:text-[60px] md:leading-[72px] capitalize max-w-xl mx-auto pt-12">
+        {/* Title */}
+        <h1 className="pt-12 mx-auto mb-4 max-w-xl text-center text-[30px] font-bold text-white md:text-[60px] md:leading-[72px]">
           Prime liquidity for growing brokers
         </h1>
-        <p className="font-sofia font-normal text-base lg:text-lg/[1.625rem] mb-6 text-center text-white max-w-lg mx-auto">
-          Institutional pricing that fits your stage.
-          Fast integration, transparent terms, and support that helps you ship.
+
+        {/* Sub */}
+        <p className="mx-auto mb-6 max-w-lg text-center text-base text-white/90 lg:text-lg/[1.625rem]">
+          Institutional pricing that fits your stage. Fast integration, transparent terms, and support that helps you ship.
         </p>
 
-        <div className="flex gap-6 justify-center pb-8">
+        {/* CTAs */}
+        <div className="flex justify-center gap-6 pb-8">
           <CommonButton>Book a call</CommonButton>
-          <CommonButton variant="ghost"> Request pricing</CommonButton>
+          <CommonButton variant="ghost">Request pricing</CommonButton>
         </div>
 
-
+        {/* Slider */}
         <FeatureSlider
           items={ITEMS}
           autoPlay
-          interval={3500}   // slide stay time
-          duration={600}    // transition ms
+          interval={3500}
+          duration={600}
           pauseOnHover
           showDots
           showArrows={false}
-          className=""
         />
-
-
       </div>
     </section>
   );

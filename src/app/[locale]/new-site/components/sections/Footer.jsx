@@ -103,14 +103,7 @@ export default function NewCommonFooter({
         <div className="container">
           <div className="border-t border-white/10" />
         </div>
-        {/* Secondary Trust Band */}
-        <div className="container py-6 text-[14px] leading-7">
-          <h3 className="text-[16px] font-semibold text-text-base">Secondary Trust Band</h3>
-          <p className="text-text-mute">
-            Global Markets Group Limited operates under trading name gmgmarkets.co.uk and gmgprime.com.  Registered in England & Wales with company number 09493910. Authorised and regulated by the Financial Conduct Authority (FRN 744501).
-
-          </p>
-        </div>
+   
         {/* Regulatory text */}
         <div className="container space-y-2 pb-10 text-[14px] leading-7 text-text-mute">
           {/* Important Information */}

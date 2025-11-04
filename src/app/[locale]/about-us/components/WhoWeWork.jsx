@@ -23,9 +23,7 @@ const WhoWeWork = () => {
                     ))}
                 </div>
 
-                <div className="mt-8 text-center">
-                    <CommonButton>Start in Sandbox</CommonButton>
-                </div>
+            
             </div>
         </section>
     )

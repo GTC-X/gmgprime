@@ -92,9 +92,6 @@ export default function PayoutKite() {
                     Note: full terms are shared in the <span className="font-semibold text-white">Partner Agreement</span>.
                 </p> */}
 
-                <div className="mt-4 text-center">
-                    <CommonButton>Request Affiliate Agreement</CommonButton>
-                </div>
             </div>
         </section>
     );

@@ -76,10 +76,7 @@ export default function GovernanceComplianceSection({
             </div>
           </div>
 
-          {/* CTA */}
-          <div className="mt-8">
-            <CommonButton>Register to Explore More</CommonButton>
-          </div>
+         
         </div>
       </div>
     </section>

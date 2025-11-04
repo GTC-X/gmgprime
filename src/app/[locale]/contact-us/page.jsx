@@ -56,7 +56,7 @@ export default function ContactUsPage() {
             <section className="container mx-auto px-4 pb-24 space-y-12">
                 {/* Book a Call Card */}
                 <div className="overflow-hidden rounded-2xl">
-                    <div className="h-full rounded-2xl bg-primary-950 bg-gradient-to-r from-sky-blue-400/25 via-primary-800 to-primary-800 p-8 xl:p-10">
+                    <div className="h-full rounded-2xl bg-primary-950 bg-gradient-to-r from-[#162166] via-primary-800 to-[#0c1447] border border-white/10 p-8 xl:p-10">
                         <h2 className="text-3xl font-normal mb-4">Speak to the Team</h2>
                         <p className="text-neutral-300 mb-6 max-w-3xl">
                             Share a few details and we’ll line up a technical review, pricing discussion, and
@@ -64,9 +64,7 @@ export default function ContactUsPage() {
                         </p>
                         <div className="flex flex-wrap gap-4">
                             <CommonButton>Book a Call</CommonButton>
-                            <button className="bg-transparent border border-sky-blue-500 px-10 py-3 rounded-lg text-white hover:bg-sky-blue-500/10 transition">
-                                Request Pricing
-                            </button>
+                            
                         </div>
                     </div>
                 </div>
@@ -91,8 +89,8 @@ export default function ContactUsPage() {
 
                 {/* Offices & Phone */}
                 <div className="overflow-hidden rounded-2xl">
-                    <div className="h-full rounded-2xl bg-primary-950 bg-gradient-to-r from-sky-blue-400/25 via-primary-800 to-primary-800 p-8 xl:p-10">
-                        <h2 className="text-3xl font-normal mb-6">Offices & Contact</h2>
+                    <div className="h-full rounded-2xl bg-primary-950 bg-gradient-to-r from-[#162166] via-primary-800 to-[#0c1447] border border-white/10 p-8 xl:p-10">
+                        <h2 className="text-xl md:text-3xl text-accent-400 font-normal mb-6">Offices & Contact</h2>
                         <div className="grid md:grid-cols-2 gap-6">
                             <div>
                                 <h3 className="font-medium text-lg mb-1">Phone</h3>
@@ -119,8 +117,8 @@ export default function ContactUsPage() {
 
                 {/* What Happens Next */}
                 <div className="overflow-hidden rounded-2xl">
-                    <div className="h-full rounded-2xl bg-primary-950 bg-gradient-to-r from-sky-blue-400/25 via-primary-800 to-primary-800 p-8 xl:p-10">
-                        <h2 className="text-3xl font-normal mb-6">What Happens Next</h2>
+                    <div className="h-full rounded-2xl bg-primary-950 bg-gradient-to-r from-[#162166] via-primary-800 to-[#0c1447] p-8 xl:p-10 border border-white/10">
+                        <h2 className="text-xl md:text-3xl text-accent-400 font-normal mb-6">What Happens Next</h2>
                         <ol className="list-decimal pl-6 space-y-2 text-neutral-200">
                             <li>We review your details and confirm a time.</li>
                             <li>You meet an engineer and RM.</li>

@@ -19,13 +19,15 @@ const WhoWeAre = ({ page = "" }) => {
 
                     </p>
                     <p className="text-neutral-200 text-sm lg:text-base mb-4">
-                        Principal Office: The Jellicoe, 5 Beaconsfield Street, King’s Cross, London N1C 4EW, UK  <br></br>Registered Office: Green Park House, 15 Stratton Street, London, W1J 8LQ. Telephone: (+44) 0203 865 3306.
+                        Principal Office: The Jellicoe, 5 Beaconsfield Street, King’s Cross, London N1C 4EW, UK 
 
                     </p>
-                    <div className="mt-8">
-<CommonButton>Register to Explore More</CommonButton>
-                    </div>
 
+                    <p className="text-neutral-200 text-sm lg:text-base mb-4">
+                        Registered Office: Green Park House, 15 Stratton Street, London, W1J 8LQ. Telephone: (+44) 0203 865 3306.
+
+                    </p>
+ 
                  
                 </div>
 

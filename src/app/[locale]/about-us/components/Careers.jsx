@@ -23,6 +23,7 @@ export default function CareersSection({
           <div className="shrink-0">
             <a
               href={careersUrl}
+              target="_blank"
               className="inline-flex items-center capitalize justify-center rounded-lg bg-[#F29B62] px-6 py-3 text-sm font-medium text-[#0B1C2B] hover:opacity-90 transition"
             >
               See open roles

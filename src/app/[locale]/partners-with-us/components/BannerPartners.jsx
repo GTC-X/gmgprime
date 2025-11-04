@@ -4,9 +4,9 @@ import Image from "next/image";
 import CommonButton from "../../components/CommonButton";
 import Link from "next/link";
 
-export default function BannerPartners({
+export default function  BannerPartners({
   bgImage = "/partner/banner-overlay.webp",          // replace with your background
-  peopleImage = "/partner/partnernew.jpg" // replace with your right image
+  peopleImage = "/partner/k-hk-hkbiz1.webp" // replace with your right image
 }) {
   return (
     <section className="relative overflow-hidden">
@@ -21,8 +21,8 @@ export default function BannerPartners({
 
       <div className="relative z-10 container mx-auto grid md:grid-cols-2 items-center">
         {/* Left content */}
-        <div className="text-left space-y-4">
-          <h2 className="text-[#ED8946] font-bold leading-tight text-4xl sm:text-5xl 2xl:text-[48px] capitalize max-w-lg">
+        <div className="text-left space-y-4 md:pt-20">
+          <h2 className="text-[#ED8946] font-bold leading-tight text-heading-1 capitalize max-w-lg">
             Grow together
            with a partner
            that actually helps
@@ -38,7 +38,7 @@ export default function BannerPartners({
         </div>
 
         {/* Right image */}
-        <div className="relative mt-10 md:mt-0 h-[340px] sm:h-[420px] md:h-[520px]">
+        <div className="relative md:mt-0 h-[340px] sm:h-[420px] md:h-[500px]">
           <Image
             src={peopleImage}
             alt="Handshake partners"

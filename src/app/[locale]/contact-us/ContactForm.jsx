@@ -159,7 +159,7 @@ const ContactForm = () => {
     }
     return (
         <div className="overflow-hidden rounded-2xl p-px bg-gradient-to-b from-[#265B9F] via-primary-800 to-accent-400">
-            <div className="h-full rounded-2xl bg-primary-950 bg-gradient-to-r from-sky-blue-400/25 via-primary-800 to-primary-800 p-8 xl:p-10">
+            <div className="h-full rounded-2xl bg-primary-950 bg-gradient-to-r from-[#162166] via-primary-800 to-[#0c1447]0 p-8 xl:p-10">
                 <h2 className="text-3xl font-normal mb-6">Enquiry Form</h2>
                 <p className="text-neutral-400 mb-8">
                     Keep it short on first pass — we’ll collect docs at onboarding.

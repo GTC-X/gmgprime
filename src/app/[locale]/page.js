@@ -8,6 +8,7 @@ import ExploreSolutions from "./new-site/components/sections/ExploreSolutions";
 import NewCommonFooter from "./new-site/components/sections/Footer";
 import SliderModalPrime from "./components/SliderModal";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "Prime Liquidity for Growing Brokers | GMG Prime",
@@ -22,7 +23,55 @@ export default function HomePage() {
         <MobileNav />
         <Hero />
       </div>
-      <WhoWeAre page="homepage" />
+           <section className="bg-[#0a1942]">
+      
+           
+              <div className="container pb-10 md:pb-16">
+                  <div className="grid gap-8 xl:grid-cols-2 xl:items-center">
+                      <div>
+                          <h2 className={`text-heading-1 mb-4 text-white`}>Who we are</h2>
+                          <p className="text-neutral-200 text-sm lg:text-base mb-4">
+                              GMG Prime is the liquidity partner built for start-up and small-to-medium brokerages. We pair institutional pricing with practical onboarding so you can launch fast, trade confidently and scale with clarity.
+                          </p>
+                          <p className="text-neutral-200 text-sm lg:text-base mb-4">
+                             Authorised and regulated by the Financial Conduct Authority (FRN 744501). Global Markets Group Limited, trading as gmgmarkets.co.uk and gmgprime.com. Company number 09493910.
+      
+                          </p>
+                          <p className="text-neutral-200 text-sm lg:text-base mb-4">
+                              Principal Office: The Jellicoe, 5 Beaconsfield Street, King’s Cross, London N1C 4EW, UK 
+      
+                          </p>
+      
+                          <p className="text-neutral-200 text-sm lg:text-base mb-6">
+                              Registered Office: Green Park House, 15 Stratton Street, London, W1J 8LQ. Telephone: (+44) 0203 865 3306.
+      
+                          </p>
+
+                          <p>
+                             <Link
+                href="/about-us"
+                className="inline-flex items-center rounded-xl px-5 py-3 bg-accent-400 text-white font-medium hover:bg-accent-400/80 transition-colors whitespace-nowrap"
+              >
+                Read More About Us
+              </Link>
+                          </p>
+       
+                       
+                      </div>
+      
+                      <div className="relative xl:justify-end">
+                          <Image
+                              src="/new/about.svg"
+                              alt="Trading laptop"
+                              width={640}
+                              height={420}
+                              className="w-full max-w-[560px] mx-auto"
+                              priority
+                          />
+                      </div>
+                  </div>
+              </div>
+                 </section>
 
       <section className="py-5 border-t border-white/5">
         <div className="container">
