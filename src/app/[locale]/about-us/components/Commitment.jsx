@@ -15,12 +15,7 @@ const Commitments = () => {
                     <li>Partner-level support: proactive insights, rapid fixes and practical help.</li>
                 </ul>
 
-                <div className="xl:col-start-2">
-                    <div className="">
-                        <CommonButton>Read our commitments</CommonButton>
-
-                        </div>
-                </div>
+              
             </div>
         </section>
     )

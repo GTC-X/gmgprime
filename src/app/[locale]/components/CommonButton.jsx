@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react";
 import SliderModal from "./SliderModal";
+import { useRouter } from "next/navigation";
 
 export default function CommonButton({ children, as = "button", href, className = "", size = "md", variant = "primary", ...rest }) {
     const Comp = href ? "a" : as;
@@ -8,6 +9,7 @@ export default function CommonButton({ children, as = "button", href, className 
         sm: "px-3.5 py-2 text-[12px]",
         md: "px-4.5 py-2.5 text-[16px]",
     };
+    const router = useRouter()
     const variants = {
         primary: "bg-accent-400 hover:bg-accent-orangeDark text-[#fff]",
         ghost: "bg-[#265B9F] hover:bg-white/10 text-text-base text-white",
@@ -26,6 +28,9 @@ export default function CommonButton({ children, as = "button", href, className 
                 onClick={() => {
                     if (variant === "primary") {
                         setOpen(true)
+                    }
+                    else {
+                        router.push("/contact-us")
                     }
                 }
                 }

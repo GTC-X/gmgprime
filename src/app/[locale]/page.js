@@ -31,7 +31,7 @@ export default function HomePage() {
         <div className="flex-1">
               <h2 className="text-heading-2 mb-2">For partners and affiliates</h2>
               <p className="text-body-1">
-                CPA available for qualified partners, with tracking tools and co-marketing support. Up to 1,000 USD per referral.
+                CPA available for qualified partners, with tracking tools and co-marketing support. Up to 1,500 USD per referral.
               </p>
             </div>
             <div>

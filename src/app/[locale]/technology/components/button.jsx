@@ -1,3 +1,6 @@
+"use client"
+import { useRouter } from "next/navigation";
+
 export default function Button({ children, as = "button", href, className = "", size = "md", variant = "primary", ...rest }) {
   const Comp = href ? "a" : as;
   const sizes = {
@@ -9,11 +12,18 @@ export default function Button({ children, as = "button", href, className = "", 
     ghost: "bg-[#265B9F] hover:bg-white/10 text-text-base text-white",
     outline: "border border-white/15 hover:border-white/25 text-text-base",
   };
+  const router = useRouter()
+
   return (
     <Comp
       href={href}
-      className={`btn-press inline-flex items-center gap-2 rounded-lg ${sizes[size]} ${variants[variant]} shadow-md shadow-black/20 ${className}`}
+      className={`btn-press inline-flex cursor-pointer items-center gap-2 rounded-lg ${sizes[size]} ${variants[variant]} shadow-md shadow-black/20 ${className}`}
       {...rest}
+
+      onClick={() => {
+        router.push("/contact-us")
+      }
+      }
     >
       {children}
     </Comp>

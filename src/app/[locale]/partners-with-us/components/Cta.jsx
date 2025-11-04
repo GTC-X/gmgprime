@@ -21,12 +21,9 @@ export default function ReadyToTalkSection({
           {/* Right CTAs */}
           <div className="flex flex-wrap items-center gap-3 md:justify-end">
             <CommonButton>Become a Partner</CommonButton>
-            <a
-              href={callUrl}
-              className="inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-medium text-white/90 ring-1 ring-white/20 hover:bg-white/5 transition"
-            >
-              Book a call
-            </a>
+            <CommonButton variant="ghost">Book a call</CommonButton>
+
+           
           </div>
         </div>
       </div>

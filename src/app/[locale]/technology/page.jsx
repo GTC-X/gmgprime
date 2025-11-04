@@ -55,7 +55,7 @@ export default function Page() {
                         </div>
                         <div>
                             <Link
-                                href="/partners"
+                                href="/contact-us"
                                 className="inline-flex items-center rounded-xl px-5 py-3 bg-accent-400 text-white font-medium hover:bg-accent-400/80 transition-colors whitespace-nowrap"
                             >
                                 Discover hosting

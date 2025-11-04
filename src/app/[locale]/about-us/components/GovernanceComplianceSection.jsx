@@ -70,9 +70,7 @@ export default function GovernanceComplianceSection({
               <div>
                 <h3 className="font-semibold text-white">Jurisdiction limits</h3>
                 <p className="mt-1 text-white/70">
-                  We do not direct information to residents of the United States,
-                  Japan, Canada, Belgium or any location where use would breach
-                  local law or regulation.
+                  The information on this website is not directed at residents of any jurisdiction where FX trading and/or CFD trading is restricted or prohibited by local laws or regulations. 
                 </p>
               </div>
             </div>
