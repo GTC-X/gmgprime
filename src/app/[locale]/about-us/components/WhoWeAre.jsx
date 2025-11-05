@@ -12,8 +12,7 @@ const WhoWeAre = ({ page = "" }) => {
                 <div>
                     <h3 className={`text-heading-1 mb-4 ${page=="homepage"?" text-white":"text-[#ED8946]"} font-normal capitalize`}>Who we are</h3>
                     <p className="text-neutral-200 text-sm lg:text-base mb-4">
-                        GMG Prime is the liquidity partner built for start-up and small-to-medium brokerages. We pair institutional pricing with practical onboarding so you can launch fast, trade confidently and scale with clarity.
-                    </p>
+GMG Prime is the liquidity partner built for start-up and small-to-medium brokerages, as well as family offices, hedge funds, asset and wealth managers. We pair institutional pricing with practical onboarding so you can launch fast, trade confidently and scale with clarity.                    </p>
                     <p className="text-neutral-200 text-sm lg:text-base mb-4">
                        Authorised and regulated by the Financial Conduct Authority (FRN 744501). Global Markets Group Limited, trading as gmgmarkets.co.uk and gmgprime.com. Company number 09493910.
 

@@ -113,7 +113,7 @@ export default function HighlightsLanding() {
               FX spot and forwards, precious and base metals, global indices and equity CFDs, energies, single stocks, and cryptocurrencies.
             </p>
             <Link
-              href="/GMGPrime_Product Specifications.pdf"
+              href="/GMGPrime_Product_Specifications.pdf"
               className="text-accent-400 underline text-body-2 w-fit"
             >
               View full product list

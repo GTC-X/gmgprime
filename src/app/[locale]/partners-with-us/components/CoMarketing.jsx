@@ -80,7 +80,7 @@ export default function PayoutKite() {
                     <KiteCard
                         slope="down-right"
                         icon="/partner/payout6.svg"
-                        title="Guides and checklists: white-label materials you can share with your audience"
+                        title="Guides and checklists you can share with your audience"
                         desc=""
                     />
                 </div>
