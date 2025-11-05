@@ -42,7 +42,7 @@ const SliderModal = ({ isOpen, onClose, zapierUrl, successPath, emailConfig }) =
               Contact Us
             </h2>
             <TradeForm
-              zapierUrl={zapierUrl}
+              zapierUrl='https://hooks.zapier.com/hooks/catch/16420445/ustacf3/'
               successPath={successPath}
               emailConfig={emailConfig} // Pass the email configuration
             />

@@ -18,12 +18,12 @@ export async function POST(req) {
     const content = generateEmailContent(reqBody);
     const supportEmail = generateSupportEmailContent(reqBody);
     const emailSender = {
-      from: "portal@mx4.gtcmail.com",
+      from: "portal@mx5.gtcmail.com",
       to: reqBody?.workEmail,
     };
 
     const supportSender = {
-      from: "portal@mx4.gtcmail.com",
+      from: "portal@mx5.gtcmail.com",
       to: "support@gmgprime.com",
     };
 
