@@ -126,31 +126,6 @@ const TradeForm = ({ zapierUrl, successPath, page = "" }) => {
             });
     };
 
-    const sendDataPostBack = async (data) => {
-        setLoading(true);
-        try {
-            const res = await fetch("/api/investing-postback", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ nickname: data?.nickname }),
-            });
-
-            if (!res.ok) throw new Error(await res.text());
-
-            toast.success(t("thankYou1"));
-            formik.resetForm();
-            localStorage.setItem("user", JSON.stringify(data));
-
-            const targetLocale = locale === "ar" ? `/ar${successPath}` : successPath;
-            router.push(targetLocale);
-            setShowOtp(false);
-        } catch (err) {
-            toast.error("Error inserting data: " + (err?.message || "Unknown error"));
-        } finally {
-            setLoading(false);
-        }
-    };
-
 
     const formik = useFormik({
         initialValues: {
@@ -203,12 +178,8 @@ const TradeForm = ({ zapierUrl, successPath, page = "" }) => {
                 );
             } catch (error) {
             } finally {
-                if (page == "investing") {
-                    sendDataPostBack(values, formik, setLoading);
-                } else {
-                    sendDataToDb(values, formik, setLoading);
 
-                }
+                sendDataToDb(values, formik, setLoading);
             }
         },
     });
