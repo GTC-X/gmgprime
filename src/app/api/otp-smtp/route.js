@@ -12,9 +12,9 @@ export async function POST(req) {
     lowerCaseAlphabets: false,
   });
   const mailData = {
-    from: '"GTC Payouts" <portal@mx5.gtcmail.com>',
+    from: '"GMG Prime " <portal@mx5.gtcmail.com>',
     to: email,
-    subject: "Your GTC Payouts OTP Code",
+    subject: "Your GMG Prime OTP Code",
     text: `Your OTP is ${otp}`,
     html:
       locale == "ar"
@@ -222,11 +222,11 @@ export async function POST(req) {
 </html>
 `
         : `
-        <!DOCTYPE html>
+       <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>GTC OTP Email</title>
+    <title>GMG Prime OTP Email</title>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
     </style>
@@ -235,69 +235,67 @@ export async function POST(req) {
     <table width="100%" cellpadding="0" cellspacing="0" style="font-family: 'Poppins', sans-serif; padding: 20px;">
       <tr>
         <td align="center">
-          <table width="600" cellpadding="0" cellspacing="0" style="border:1px solid #e0e0e0;border-radius:8px;padding:30px;">
-           <!-- Logo -->
+          <table width="600" cellpadding="0" cellspacing="0" style="border:1px solid #e0e0e0;border-radius:8px;padding:30px; background-color: #0a1942;">
+            <!-- Logo -->
             <tr>
               <td align="left" style="padding-bottom: 20px;">
-                <img src="https://gtcpayouts.vercel.app/_next/static/media/logogtcpay.b11b4629.png" alt="GTC Logo" style="width: 120px;" />
+                <img src="https://gmgprime.vercel.app/new/new-logo.svg" alt="GMG Prime Logo" style="width: 120px;" />
               </td>
             </tr>
 
             <!-- Heading -->
             <tr>
-              <td style="font-size:20px;font-weight:600;color:#000000;padding-bottom:10px;">
-                Your GTC OTP
+              <td style="font-size:20px;font-weight:600;color:#ffffff;padding-bottom:10px;">
+                Your GMG Prime OTP
               </td>
             </tr>
             <tr>
-              <td style="font-size:14px;color:#000000;padding-bottom:20px;">
-                Thank you for choosing GTC.
-
+              <td style="font-size:14px;color:#ffffff;padding-bottom:20px;">
+                Thank you for choosing GMG Prime.
               </td>
             </tr>
 
             <tr>
-  <td style="border-top: 2px solid #e0e0e0; padding: 15px 0;"></td>
-</tr>
+              <td style="border-top: 2px solid #e0e0e0; padding: 15px 0;"></td>
+            </tr>
 
             <!-- Greeting & OTP -->
             <tr>
-              <td style="font-size:14px;color:#000000;padding-bottom:10px;">
+              <td style="font-size:14px;color:#ffffff;padding-bottom:10px;">
                 Dear ${first_name || "Client"},
               </td>
             </tr>
-             <tr>
-              <td style="font-size:14px;color:#000000;padding-bottom:10px;">
-              Please use the following One-Time Password to complete your further process.
-
+            <tr>
+              <td style="font-size:14px;color:#ffffff;padding-bottom:10px;">
+                Please use the following One-Time Password to proceed with your next step securely.
               </td>
             </tr>
             <tr>
-              <td style="font-size:24px;font-weight:600;color:#2e2e2e;padding-bottom:20px;">
+              <td style="font-size:24px;font-weight:600;color:#e27c2f;padding-bottom:20px;">
                 ${otp}
               </td>
             </tr>
-        
+
             <!-- Support Info -->
             <tr>
-              <td style="font-size:14px;color:#000000;padding-bottom:20px;">
-                If you’ve got any questions or need further assistance, please don’t hesitate to contact us at 
-                <a href="mailto:support@gtcpayouts.com" style="color:#0066cc;text-decoration:none;">support@gtcpayouts.com</a>.
-                We are here to support you and ensure your experience with us is the best you’ve ever experienced.
+              <td style="font-size:14px;color:#ffffff;padding-bottom:20px;">
+                If you have any questions or require assistance, feel free to reach out to us at 
+                <a href="mailto:support@gmgprime.com" style="color:#e27c2f;text-decoration:none;">support@gmgprime.com</a>. 
+                Our team is always here to ensure your trading experience with GMG Prime remains seamless and professional.
               </td>
             </tr>
 
             <!-- Signoff -->
             <tr>
-              <td style="font-size:14px;color:#000000;padding-bottom:30px;">
-                Have a great day,<br>
-                Your GTC Team
+              <td style="font-size:14px;color:#ffffff;padding-bottom:30px;">
+                Best regards,<br>
+                The GMG Prime Team
               </td>
             </tr>
 
-             <tr>
-  <td style="border-top: 2px solid #e0e0e0; padding: 15px 0;"></td>
-</tr>
+            <tr>
+              <td style="border-top: 2px solid #e0e0e0; padding: 15px 0;"></td>
+            </tr>
 
             <!-- Contact Info -->
             <tr>
@@ -305,26 +303,33 @@ export async function POST(req) {
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
                     <td align="left">
-                      <img src="https://gtcpayouts.vercel.app/_next/static/media/logogtcpay.b11b4629.png" alt="GTC Logo" style="width: 100px;" />
+                      <img src="https://gmgprime.vercel.app/new/new-logo.svg" alt="GMG Prime Logo" style="width: 100px;" />
                     </td>
-                    <td align="right" style="font-size: 13px; color: #192055; line-height: 25px;">
-                      📞 Phone: +971 800 667788<br/>
-                      ✉️ Email: <a href="mailto:support@gtcpayouts.com" style="color: #192055; text-decoration: none;">support@gtcpayouts.com</a>
+                    <td align="right" style="font-size: 13px; color: #fff; line-height: 22px;">
+                      📞 Phone: (+44) 0203 865 3306<br/>
+                      ✉️ Email: <a href="mailto:support@gmgprime.com" style="color: #fff; text-decoration: none;">support@gmgprime.com</a>
                     </td>
                   </tr>
-                  
                 </table>
               </td>
             </tr>
 
-            
+            <!-- Disclaimer -->
+            <tr>
+              <td align="left" style="font-size: 11px; color: #f2f2f2; padding-top: 20px; line-height: 18px;">
+                Prime liquidity for growing brokers. Institutional pricing that fits your stage. Fast integration for confident trading and scalable growth.<br><br>
+                Authorised and regulated by the Financial Conduct Authority (FRN 744501). Global Markets Group Limited, trading as 
+                <strong>gmgmarkets.co.uk</strong> and <strong>gmgprime.com</strong>. Company number <strong>09493910</strong>.<br>
+                Principal Office: The Jellicoe, 5 Beaconsfield Street, King’s Cross, London N1C 4EW, UK.<br>
+                Registered Office: Green Park House, 15 Stratton Street, London, W1J 8LQ.
+              </td>
+            </tr>
 
-<tr>
-  <td align="center" style="font-size: 12px; color: #666666; padding-top: 15px; padding-bottom: 30px;">
-    &copy; Copyright 2025 GTC Payouts – All Rights Reserved
-  </td>
-</tr>
-
+            <tr>
+              <td align="center" style="font-size: 12px; color: #f2f2f2; padding-top: 20px;">
+                &copy; Copyright 2025 GMG Prime – All Rights Reserved
+              </td>
+            </tr>
 
           </table>
         </td>
@@ -332,6 +337,7 @@ export async function POST(req) {
     </table>
   </body>
 </html>
+
 
         `,
   };

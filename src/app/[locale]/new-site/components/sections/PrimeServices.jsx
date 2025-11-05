@@ -43,7 +43,7 @@ export default function PrimeServices() {
         </h2>
 
         {/* Cards Grid */}
-        <div className="grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
+        <div className="grid gap-6 lg:grid-cols-2 xl:grid-cols-3 pb-8">
           {items.map((c, i) => (
             <div
               key={i}
@@ -51,7 +51,7 @@ export default function PrimeServices() {
             >
               <div className="flex items-center gap-4 mb-3">
                 <div className="h-10 w-10 flex items-center justify-center rounded-full bg-[#265B9F]/20">
-                  <Image src={c.img} alt={c.title} width={28} height={28} />
+                  <Image src={c.img} alt={c.title} width={40} height={40} />
                 </div>
                 <h3 className="text-lg md:text-xl font-semibold text-white">
                   {c.title}
@@ -66,11 +66,7 @@ export default function PrimeServices() {
         </div>
 
         {/* CTA Button */}
-        <div className="mt-10 text-center">
-          <button className="bg-[#E77831] text-white px-6 py-3 rounded-xl font-medium hover:bg-[#cc692c] transition-all">
-            See all solutions
-          </button>
-        </div>
+     
       </div>
     </section>
   );

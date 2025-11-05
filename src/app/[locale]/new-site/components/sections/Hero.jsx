@@ -56,7 +56,7 @@ export default function Hero() {
 
       <div className="container relative">
         {/* Title */}
-        <h1 className="pt-12 mx-auto mb-4 max-w-xl text-center text-[30px] font-bold text-white md:text-[60px] md:leading-[72px]">
+        <h1 className="pt-12 mx-auto mb-4 max-w-xl text-center text-[30px] font-bold text-white md:text-[60px] md:leading-[72px] capitalize">
           Prime liquidity for growing brokers
         </h1>
 

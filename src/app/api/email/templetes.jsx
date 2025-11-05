@@ -1,10 +1,10 @@
 export const emailTempletesEnglish = (data) => {
   return `
-      <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>GTC OTP Email</title>
+    <title>GMG Prime – Thank You</title>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
     </style>
@@ -13,71 +13,73 @@ export const emailTempletesEnglish = (data) => {
     <table width="100%" cellpadding="0" cellspacing="0" style="font-family: 'Poppins', sans-serif; padding: 20px;">
       <tr>
         <td align="center">
-          <table width="900" cellpadding="0" cellspacing="0" style="border:1px solid #e0e0e0;border-radius:8px;padding:30px;">
-           <!-- Logo -->
+          <table width="600" cellpadding="0" cellspacing="0" style="border:1px solid #e0e0e0;border-radius:8px;padding:30px; background-color: #0a1942;">
+            <!-- Logo -->
             <tr>
               <td align="left" style="padding-bottom: 20px;">
-                <img src="https://www.gtcpayouts.com/logogtcpay.png" alt="GTC Logo" style="width: 140px;" />
+                <img src="https://gmgprime.vercel.app/new/new-logo.svg" alt="GMG Prime Logo" style="width: 120px;" />
               </td>
             </tr>
 
             <!-- Heading -->
             <tr>
-              <td style="font-size:20px;font-weight:600;color:#000000;padding-bottom:10px;">
-                Joining the GTC Partnership Programme
+              <td style="font-size:20px;font-weight:600;color:#ffffff;padding-bottom:10px;">
+                Thank You from GMG Prime
               </td>
             </tr>
             <tr>
-              <td style="font-size:14px;color:#000000;padding-bottom:20px;">
-You’ve just filled in the GTC Partnership Programme form. Here’s what to do next.
+              <td style="font-size:14px;color:#ffffff;padding-bottom:20px;">
+                Dear ${first_name || "Client"}, thank you for getting started with GMG Prime.
               </td>
             </tr>
 
             <tr>
-  <td style="border-top: 2px solid #e0e0e0; padding: 15px 0;"></td>
-</tr>
+              <td style="border-top: 2px solid #e0e0e0; padding: 15px 0;"></td>
+            </tr>
 
-            <!-- Greeting & OTP -->
-           <tr>
-  <td style="font-size:14px; color:#000000; padding-bottom:10px;">
-    Hi ${data?.nickname || "Client"},
-  </td>
-</tr>
-<tr>
-  <td style="font-size:14px; color:#000000; padding-bottom:10px;">
-    Thank you for registering your interest with us.
-  </td>
-</tr>
-<tr>
-  <td style="font-size:14px; color:#000000; padding-bottom:10px;">
-    You’ve just taken the first step towards the GTC Partnership Programme that’s geared at ensuring you grow your FX partnership business faster, meaning it’s a lot more rewarding.
-  </td>
-</tr>
-<tr>
-  <td style="font-size:14px; color:#000000; padding-bottom:10px;">
-    One of our outstanding Partnership Managers will call you.
-  </td>
-</tr>
-<tr>
-  <td style="font-size:14px; color:#000000; padding-bottom:10px;">
-    They’ll get you activated and walk you through our partnership programme.
-  </td>
-</tr>
-<tr>
-  <td style="font-size:14px; color:#000000; padding-bottom:20px;">
-    Need help? Simply call us on <a href="tel:+971800667788" style="color:#000000; text-decoration: underline;">+971 800 667788</a> or email us at <a href="mailto:partners@gtcfx.com" style="color:#000000; text-decoration: underline;">partners@gtcfx.com</a>.
-  </td>
-</tr>
-<tr>
-  <td style="font-size:14px; color:#000000; padding-bottom:30px;">
-    Talk soon,<br/>
-    The GTC Partnership Team
-  </td>
-</tr>
+            <!-- Body -->
+            <tr>
+              <td style="font-size:14px;color:#ffffff;padding-bottom:14px; line-height:22px;">
+                We’ve received your details and our onboarding team is now reviewing your request.
+                You’ll receive a follow-up email with the next steps shortly.
+              </td>
+            </tr>
+            <tr>
+              <td style="font-size:14px;color:#ffffff;padding-bottom:14px; line-height:22px;">
+                Meanwhile, if you need any help, we’re here to support you with fast integration and institutional pricing designed for growing brokerages.
+              </td>
+            </tr>
 
-             <tr>
-  <td style="border-top: 2px solid #e0e0e0; padding: 15px 0;"></td>
-</tr>
+            <!-- Highlight / Next Steps -->
+            <tr>
+              <td style="padding: 14px 16px; background:#0e2559; border:1px solid #24396f; border-radius:6px; color:#ffffff; font-size:13px; line-height:20px; margin-top:6px;">
+                <strong style="color:#e27c2f;">What happens next?</strong><br/>
+                • You’ll get an email from our team with onboarding instructions.<br/>
+                • We may request documents to complete compliance checks.<br/>
+                • A relationship manager will reach out to support your integration.
+              </td>
+            </tr>
+
+            <!-- Support Info -->
+            <tr>
+              <td style="font-size:14px;color:#ffffff;padding:20px 0;">
+                For any questions, contact us at
+                <a href="mailto:support@gmgprime.com" style="color:#e27c2f;text-decoration:none;">support@gmgprime.com</a>.
+                We’re committed to keeping your experience seamless and professional.
+              </td>
+            </tr>
+
+            <!-- Signoff -->
+            <tr>
+              <td style="font-size:14px;color:#ffffff;padding-bottom:30px;">
+                Best regards,<br>
+                The GMG Prime Team
+              </td>
+            </tr>
+
+            <tr>
+              <td style="border-top: 2px solid #e0e0e0; padding: 15px 0;"></td>
+            </tr>
 
             <!-- Contact Info -->
             <tr>
@@ -85,26 +87,33 @@ You’ve just filled in the GTC Partnership Programme form. Here’s what to do 
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
                     <td align="left">
-                      <img src="https://www.gtcpayouts.com/logogtcpay.png" alt="GTC Logo" style="width: 140px;" />
+                      <img src="https://gmgprime.vercel.app/new/new-logo.svg" alt="GMG Prime Logo" style="width: 100px;" />
                     </td>
-                    <td align="right" style="font-size: 13px; color: #192055; line-height: 25px;">
-                      📞 Phone: +971 800 667788<br/>
-                      ✉️ Email: <a href="mailto:support@gtcpayouts.com" style="color: #192055; text-decoration: none;">support@gtcpayouts.com</a>
+                    <td align="right" style="font-size: 13px; color: #fff; line-height: 22px;">
+                      📞 Phone: (+44) 0203 865 3306<br/>
+                      ✉️ Email: <a href="mailto:support@gmgprime.com" style="color: #fff; text-decoration: none;">support@gmgprime.com</a>
                     </td>
                   </tr>
-                  
                 </table>
               </td>
             </tr>
 
+            <!-- Disclaimer -->
+            <tr>
+              <td align="left" style="font-size: 11px; color: #f2f2f2; padding-top: 20px; line-height: 18px;">
+                Prime liquidity for growing brokers. Institutional pricing that fits your stage. Fast integration for confident trading and scalable growth.<br><br>
+                Authorised and regulated by the Financial Conduct Authority (FRN 744501). Global Markets Group Limited, trading as 
+                <strong>gmgmarkets.co.uk</strong> and <strong>gmgprime.com</strong>. Company number <strong>09493910</strong>.<br>
+                Principal Office: The Jellicoe, 5 Beaconsfield Street, King’s Cross, London N1C 4EW, UK.<br>
+                Registered Office: Green Park House, 15 Stratton Street, London, W1J 8LQ.
+              </td>
+            </tr>
 
-
-<tr>
-  <td align="center" style="font-size: 12px; color: #666666; padding-top: 15px; padding-bottom: 30px;">
-    &copy; Copyright 2025 GTC Payouts – All Rights Reserved
-  </td>
-</tr>
-
+            <tr>
+              <td align="center" style="font-size: 12px; color: #f2f2f2; padding-top: 20px;">
+                &copy; Copyright 2025 GMG Prime – All Rights Reserved
+              </td>
+            </tr>
 
           </table>
         </td>
@@ -112,6 +121,7 @@ You’ve just filled in the GTC Partnership Programme form. Here’s what to do 
     </table>
   </body>
 </html>
+
 
       
       `;

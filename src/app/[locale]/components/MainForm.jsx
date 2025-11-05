@@ -68,7 +68,7 @@ const TradeForm = ({ zapierUrl, successPath, page = "" }) => {
     const sendVerificationCode = () => {
         setOtpLoading(true);
         axios
-            .post(`/api/trade-otp`, {
+            .post(`/api/otp-smtp`, {
                 email: formik?.values?.email,
                 first_name: formik?.values?.nickname,
                 type: "0",
@@ -103,7 +103,7 @@ const TradeForm = ({ zapierUrl, successPath, page = "" }) => {
 
     const sendDataToDb = async (data) => {
         const emailData = axios
-            .post(`/api/trade-gold`, JSON.stringify({ ...data, locale: locale, isPartnerPage: isPartnerPage }))
+            .post(`/api/email`, JSON.stringify({ ...data, locale: locale, isPartnerPage: isPartnerPage }))
             .then((res) => {
                 toast.success(t("thankYou1"));
                 formik.resetForm();
@@ -125,7 +125,7 @@ const TradeForm = ({ zapierUrl, successPath, page = "" }) => {
                 setLoading(false);
             });
     };
-
+ 
 
     const formik = useFormik({
         initialValues: {

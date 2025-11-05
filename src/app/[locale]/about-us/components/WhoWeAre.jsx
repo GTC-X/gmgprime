@@ -10,7 +10,7 @@ const WhoWeAre = ({ page = "" }) => {
         <div className="container py-16 xl:py-24">
             <div className="grid gap-8 xl:grid-cols-2 xl:items-center">
                 <div>
-                    <h1 className={`text-heading-1 mb-4 ${page=="homepage"?" text-white":"text-[#ED8946]"} font-normal capitalize`}>Who we are</h1>
+                    <h3 className={`text-heading-1 mb-4 ${page=="homepage"?" text-white":"text-[#ED8946]"} font-normal capitalize`}>Who we are</h3>
                     <p className="text-neutral-200 text-sm lg:text-base mb-4">
                         GMG Prime is the liquidity partner built for start-up and small-to-medium brokerages. We pair institutional pricing with practical onboarding so you can launch fast, trade confidently and scale with clarity.
                     </p>
