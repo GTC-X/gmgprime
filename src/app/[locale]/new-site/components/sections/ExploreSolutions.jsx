@@ -101,7 +101,7 @@ export default function HighlightsLanding() {
     <main className=" text-white">
       <div className="container mx-auto px-4 py-10 xl:py-14 space-y-8">
 
-     
+
         {/* Instruments overview */}
         <CardGradient>
           <section className="flex flex-col gap-4">
@@ -112,12 +112,14 @@ export default function HighlightsLanding() {
             <p className="text-body-1">
               FX spot and forwards, precious and base metals, global indices and equity CFDs, energies, single stocks, and cryptocurrencies.
             </p>
-            <Link
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
               href="/GMGPrime_Product_Specifications.pdf"
               className="text-accent-400 underline text-body-2 w-fit"
             >
               View full product list
-            </Link>
+            </a>
           </section>
         </CardGradient>
 
@@ -161,9 +163,9 @@ export default function HighlightsLanding() {
         </CardGradient>
 
         {/* Partners & affiliates */}
-     
 
-      
+
+
 
 
       </div>
