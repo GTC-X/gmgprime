@@ -275,7 +275,7 @@ export const supportEmailTempelates = (data) => {
                     <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-radius: 36px; padding: 20px; background-color: #fff; width: 100%;">
                         <tr>
                             <td class="header" style="padding: 20px; text-align: center;">
-                                <img src="/new/logo.svg" alt="GTC Global Capital Trade Logo" style="max-width: 165px; height: auto;">
+                                <img src="https://gmgprime.vercel.app/new/new-logo.svg" alt="GTC Global Capital Trade Logo" style="max-width: 165px; height: auto;">
                             </td>
                         </tr>
                         <tr>
@@ -302,6 +302,41 @@ export const supportEmailTempelates = (data) => {
                                         <th style="padding: 10px; text-align: left; background-color: #f2f2f2; color: #192055;">Phone Number</th>
                                         <td style="padding: 10px; border: 1px solid #ddd;">${data?.phone}</td>
                                     </tr>
+
+                                      <tr>
+                      <th
+                       style="padding: 10px; text-align: left; background-color: #f2f2f2; color: #192055;"
+                      >
+                        Company
+                      </th>
+                      <td style="padding: 10px; border: 1px solid #ddd">
+                        ${data?.company}
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th
+                       style="padding: 10px; text-align: left; background-color: #f2f2f2; color: #192055;"
+                      >
+                        Legal Entity
+                      </th>
+                      <td style="padding: 10px; border: 1px solid #ddd">
+                        ${data?.legalEntity}
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th
+                     style="padding: 10px; text-align: left; background-color: #f2f2f2; color: #192055;"
+                      >
+                        Website
+                      </th>
+                      <td style="padding: 10px; border: 1px solid #ddd">
+                        ${data?.website}
+                      </td>
+                    </tr>
+
+                    
                                     <tr style="margin-top:5px;">
                                         <th colspan="2" style="padding: 10px; text-align: left; background-color: #f2f2f2; color: #192055;">Message</th>
                                         
