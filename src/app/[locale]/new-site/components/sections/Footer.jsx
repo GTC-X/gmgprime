@@ -188,7 +188,7 @@ export default function NewCommonFooter({
       },
       {
         title: "Privacy Policy",
-        href: "/privacy-page",
+        href: "/privacy-policy",
       },
     ].map(({ title, href }, i) => (
       <span key={title} className="flex items-center">

@@ -457,7 +457,7 @@ const TradeForm = ({ zapierUrl, successPath, page = "" }) => {
                             I confirm that have read and agree to the {" "}
                             <a
                                 className="text-secondary underline"
-                                href="/privacy-page"
+                                href="/privacy-policy"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >

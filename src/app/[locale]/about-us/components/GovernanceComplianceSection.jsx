@@ -58,7 +58,7 @@ export default function GovernanceComplianceSection({
                     Conflicts of Interest</a>,{" "}
                   <a href="GLOBAL-MARKETS-GROUP-LIMITED_CONFLICTS_OF_INTEREST_POLICY.pdf" target="_blank" rel="noopener noreferrer" className="text-sky-400 hover:text-sky-300 underline underline-offset-2">
                     Complaints Handling and Disputes</a>,{" "}
-                  <a href="/privacy-page" target="_blank" rel="noopener noreferrer" className="text-sky-400 hover:text-sky-300 underline underline-offset-2">
+                  <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-sky-400 hover:text-sky-300 underline underline-offset-2">
                     Privacy Policy.</a>
                 </p>
               </div>
