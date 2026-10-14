@@ -4,8 +4,14 @@ import { useMemo, useState } from "react";
 import Header from "../new-site/components/Header";
 import NewCommonFooter from "../new-site/components/sections/Footer";
 import Meta from "../components/Meta";
+import { ULTENCY_FAQS } from "../data/ultencyFaqs";
 
 const sections = [
+    {
+        id: "ultency",
+        title: "Ultency & GMG Prime",
+        items: ULTENCY_FAQS.map(({ q, a }) => ({ q, a })),
+    },
     {
         id: "getting-started",
         title: "Getting started",

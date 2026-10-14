@@ -20,10 +20,7 @@ export default function Hero() {
                         Built on proven <br /> infrastructure
                     </h2>
                     <p className="mt-4 text-[20px] leading-7 text-text-mute">
-                        You want low latency, stability and deep <br className="hidden md:block" />
-                        connectivity. Our customizable, private L1/2 <br className="hidden md:block" />
-                        network stack lets you build once and <br className="hidden md:block" />
-                        trade with confidence.
+                        Our institutional stack is built on MetaTrader 5, with the Ultency Matching Engine running aggregation and order matching for GMG Prime. Because Ultency is native to MT5 rather than bolted on beside it, there are fewer hops between the client's order and execution, and instrument and session settings are managed in one place.
                     </p>
                  
                 </div>
