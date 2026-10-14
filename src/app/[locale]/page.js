@@ -5,6 +5,8 @@ import WhoWeAre from "./about-us/components/WhoWeAre";
 import PrimeServices from "./new-site/components/sections/PrimeServices";
 import Rostro from "./new-site/components/sections/Rostro";
 import ExploreSolutions from "./new-site/components/sections/ExploreSolutions";
+import PoweredByUltency from "./new-site/components/sections/PoweredByUltency";
+import HomeUltencyFaqs from "./new-site/components/sections/HomeUltencyFaqs";
 import NewCommonFooter from "./new-site/components/sections/Footer";
 import SliderModalPrime from "./components/SliderModal";
 import Link from "next/link";
@@ -99,6 +101,8 @@ GMG Prime is the liquidity partner built for start-up and small-to-medium broker
 
 
       <ExploreSolutions />
+      <PoweredByUltency />
+      <HomeUltencyFaqs />
       <SliderModalPrime />
       <NewCommonFooter />
     </>
