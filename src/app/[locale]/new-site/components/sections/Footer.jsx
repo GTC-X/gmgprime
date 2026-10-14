@@ -190,6 +190,10 @@ export default function NewCommonFooter({
         title: "Privacy Policy",
         href: "/privacy-policy",
       },
+      {
+        title: "Pricing and terms",
+        href: "/term-condition",
+      },
     ].map(({ title, href }, i) => (
       <span key={title} className="flex items-center">
         <a
@@ -200,7 +204,7 @@ export default function NewCommonFooter({
         >
           {title}
         </a>
-        {i < 4 && <span className="mx-2 text-white/40">|</span>}
+        {i < 5 && <span className="mx-2 text-white/40">|</span>}
       </span>
     ))}
   </div>
