@@ -8,6 +8,7 @@ import TechSpecs from "./components/techSpecs";
 import Link from "next/link";
 import NewCommonFooter from "../new-site/components/sections/Footer";
 import PricingTermsTable from "../components/PricingTermsTable";
+import PricingTermsExtendedSections from "../components/PricingTermsExtendedSections";
 import ScrollToHash from "../components/ScrollToHash";
 
 export const metadata = {
@@ -48,7 +49,7 @@ export default function Page() {
                 <CardGradient>
                     <section className="flex flex-col xl:flex-row items-start gap-6">
                         <div className="flex-1">
-                            <h2 className="text-heading-2 mb-2">Latency and Proximity</h2>
+                            <h2 className="text-heading-2 mb-2">Latency and technology</h2>
                             <p className="text-body-1">
                                 Close to the price sessions anchored in LD4 with proximity hosting options
                             </p>
@@ -72,10 +73,18 @@ export default function Page() {
                     >
                         <h2 className="text-heading-2 mb-4">Pricing and terms</h2>
                         <p className="text-body-1 text-neutral-400 mb-6">
-                            Simple commissions or markup with no platform surprises.
+                            Simple commissions or markup with no platform surprises.{" "}
+                            <Link
+                                href="/term-condition"
+                                className="text-accent-400 underline underline-offset-2 hover:text-accent-400/80"
+                            >
+                                View full terms
+                            </Link>
                         </p>
                         <PricingTermsTable />
                     </section>
+
+                    <PricingTermsExtendedSections variant="inline" />
                 </CardGradient>
             </div>
 
