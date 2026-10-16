@@ -7,6 +7,8 @@ import Hero from "./components/hero";
 import TechSpecs from "./components/techSpecs";
 import Link from "next/link";
 import NewCommonFooter from "../new-site/components/sections/Footer";
+import PricingTermsTable from "../components/PricingTermsTable";
+import ScrollToHash from "../components/ScrollToHash";
 
 export const metadata = {
     title: "Built on proven infrastructure | GMG Prime",
@@ -17,6 +19,7 @@ export const metadata = {
 export default function Page() {
     return (
         <>
+            <ScrollToHash />
             <div className=" relative">
                 <Hero />
             </div>
@@ -41,7 +44,7 @@ export default function Page() {
                 </div>
             </section>
 
-            <div className=" container mx-auto pt-10">
+            <div className="container mx-auto scroll-mt-28 pt-10">
                 <CardGradient>
                     <section className="flex flex-col xl:flex-row items-start gap-6">
                         <div className="flex-1">
@@ -62,8 +65,20 @@ export default function Page() {
                             </Link>
                         </div>
                     </section>
+
+                    <section
+                        id="pricing-and-terms"
+                        className="mt-10 border-t border-white/10 pt-10 scroll-mt-28"
+                    >
+                        <h2 className="text-heading-2 mb-4">Pricing and terms</h2>
+                        <p className="text-body-1 text-neutral-400 mb-6">
+                            Simple commissions or markup with no platform surprises.
+                        </p>
+                        <PricingTermsTable />
+                    </section>
                 </CardGradient>
             </div>
+
             {/* Two-up grids (repeat blocks as needed) */}
             <FeatureGrid
                 items={[

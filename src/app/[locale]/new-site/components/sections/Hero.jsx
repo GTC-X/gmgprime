@@ -14,7 +14,7 @@ export default function Hero() {
       src: "/new/icon2.svg",
       title: "Transparent pricing",
       text: "Simple commissions or markup with no platform surprises.",
-      href: "/technology",
+      href: "/technology#pricing-and-terms",
     },
     {
       src: "/new/icon3.svg",

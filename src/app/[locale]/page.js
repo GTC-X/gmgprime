@@ -99,7 +99,6 @@ GMG Prime is the liquidity partner built for start-up and small-to-medium broker
       
       <PrimeServices />
 
-
       <ExploreSolutions />
       <PoweredByUltency />
       <HomeUltencyFaqs />

@@ -1,19 +1,11 @@
 import NewCommonFooter from "../new-site/components/sections/Footer";
+import PricingTermsTable from "../components/PricingTermsTable";
 
 export const metadata = {
   title: "Pricing and terms | GMG Prime",
   description:
     "GMG Prime pricing, commission, volume cashback on commission and swaps, and what is included with every account.",
 };
-
-const PRICING_ROWS = [
-  { item: "Pricing-only API fee", terms: "$1,000 per month" },
-  { item: "Minimum initial deposit (STP)", terms: "$20,000" },
-  {
-    item: "Commission",
-    terms: "$8 per $1m notional, charged on open only",
-  },
-];
 
 const CASHBACK_ROWS = [
   {
@@ -97,13 +89,7 @@ export default function TermConditionPage() {
 
           <article className="xl:col-span-4 space-y-8">
             <ContentCard id="pricing-and-terms" title="Pricing and terms">
-              <DataTable
-                columns={[
-                  { key: "item", header: "Item" },
-                  { key: "terms", header: "Terms" },
-                ]}
-                rows={PRICING_ROWS}
-              />
+              <PricingTermsTable />
             </ContentCard>
 
             <ContentCard
