@@ -5,13 +5,9 @@ import Header from "../new-site/components/Header";
 import NewCommonFooter from "../new-site/components/sections/Footer";
 import Meta from "../components/Meta";
 import { ULTENCY_FAQS } from "../data/ultencyFaqs";
+import CommissionTiersFaqAnswer from "../components/CommissionTiersFaqAnswer";
 
 const sections = [
-    {
-        id: "ultency",
-        title: "Ultency & GMG Prime",
-        items: ULTENCY_FAQS.map(({ q, a }) => ({ q, a })),
-    },
     {
         id: "getting-started",
         title: "Getting started",
@@ -62,7 +58,11 @@ const sections = [
         items: [
             {
                 q: "How do we connect?",
-                a: "FIX 4.4 is available. We also support MetaTrader 5 via PrimeXM and TFB bridges. One integration can route across multiple sources with real-time P&L and centralised margin.",
+                a: "FIX 4.4 is available. We also support MetaTrader 5 via PrimeXM and various other bridge providers. One integration can route across multiple sources with real-time P&L and centralised margin.",
+            },
+            {
+                q: "What platforms/liquidity bridges does GMG Prime support?",
+                a: "We support MT4, MT5 and various other bridge providers including Gold-i, OneZero and PrimeXM.",
             },
             {
                 q: "Where are you hosted?",
@@ -73,6 +73,11 @@ const sections = [
                 a: "Yes. Drop copy is available. The portal provides symbol controls, report downloads and user permissions.",
             },
         ],
+    },
+    {
+        id: "ultency",
+        title: "Ultency & GMG Prime",
+        items: ULTENCY_FAQS.map(({ q, a }) => ({ q, a })),
     },
     {
         id: "liquidity",
@@ -106,7 +111,10 @@ const sections = [
             },
             {
                 q: "What are your current commission tiers?",
-                a: "10 per million under 1B, 8 per million from 1B to 5B, and 6 per million above 5B. Monthly minimum of USD 1,000 applies (volume discounts may be available).",
+                a: "We offer simple commissions or markup with no platform surprises.",
+                searchText:
+                    "We offer simple commissions or markup with no platform surprises. Pricing-only API fee commission $8 per $1m notional volume cashback swaps",
+                content: <CommissionTiersFaqAnswer />,
             },
             {
                 q: "What leverage is available?",
@@ -204,9 +212,10 @@ export default function FaqPage() {
         return sections
             .map((s) => ({
                 ...s,
-                items: s.items.filter(
-                    (i) => i.q.toLowerCase().includes(q) || i.a.toLowerCase().includes(q)
-                ),
+                items: s.items.filter((i) => {
+                    const haystack = `${i.q} ${i.a ?? ""} ${i.searchText ?? ""}`.toLowerCase();
+                    return haystack.includes(q);
+                }),
             }))
             .filter((s) => s.items.length > 0);
     }, [query]);
@@ -336,7 +345,7 @@ function SectionBlock({ section, openKey, setOpenKey }) {
                                     >
                                         <div className="overflow-hidden">
                                             <div className="px-5 pb-5 text-neutral-400 text-body-2">
-                                                {item.a}
+                                                {item.content ?? item.a}
                                             </div>
                                         </div>
                                     </div>

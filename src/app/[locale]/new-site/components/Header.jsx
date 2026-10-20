@@ -9,6 +9,7 @@ const NAV_LINKS = [
   ["About Us", "/about-us"],
   ["Partners", "/partners-with-us"],
   ["Technology", "/technology"],
+  ["Powered by Ultency", "/powered-by-ultency"],
   ["Faqs", "/faqs"],
   ["Contact", "/contact-us"],
 ];

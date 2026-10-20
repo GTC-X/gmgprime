@@ -19,7 +19,7 @@ const items = [
   {
     title: "Connectivity & Access",
     img: "/icons/p1.svg",
-    desc: "FIX 4.4, PrimeXM and TFB bridges, MT5. One integration across multiple sources.",
+    desc: "FIX 4.4, PrimeXM and other Bridge Providers, MT5. One integration across multiple sources.",
   },
   {
     title: "Reporting & TCA",

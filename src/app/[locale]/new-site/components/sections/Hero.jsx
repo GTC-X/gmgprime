@@ -58,12 +58,12 @@ export default function Hero() {
       <div className="container relative">
         {/* Title */}
         <h1 className="pt-12 mx-auto mb-4 max-w-3xl text-center text-[30px] font-bold text-white md:text-[60px] md:leading-[72px] capitalize">
-        Institutional liquidity, native to MetaTrader 5.
+        Institutional liquidity, native to MetaTrader 5
         </h1>
 
         {/* Sub */}
         <p className="mx-auto mb-6 max-w-3xl text-center text-base text-white/90 lg:text-lg/[1.625rem]">
-        GMG Prime runs on MetaQuotes' Ultency Matching Engine, so brokers connect to our liquidity inside MT5 with far less need for bridges or middleware.        </p>
+        Institutional pricing that fits your stage. Fast integration, transparent terms and support that helps you scale up       </p>
 
         {/* CTAs */}
         <div className="flex flex-col items-center gap-4 pb-8">

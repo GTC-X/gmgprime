@@ -1,9 +1,7 @@
 export const PRICING_ROWS = [
   { item: "Pricing-only API fee", terms: "$1,000 per month" },
   { item: "Minimum initial deposit (STP)", terms: "$20,000" },
-  {
-   item: "Commission", terms: "$8 per $1m notional" 
-  },
+  { item: "Commission", terms: "$8 per $1m notional" },
 ];
 
 export const CASHBACK_ROWS = [
@@ -41,3 +39,6 @@ export const INCLUDED_WITH_ACCOUNT = [
   "First three months of API fees free of charge",
   "24/5 personalised technical support",
 ];
+
+export const CASHBACK_FOOTNOTE =
+  "Swap cashback is calculated as a percentage of swap charges paid. Cashback applies to all volume in the month once a tier is reached.";

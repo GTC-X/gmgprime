@@ -8,8 +8,7 @@ const Technology = () => {
                 <div>
                     <h3 className="text-heading-2 mb-3 font-normal text-[#ED8946]">Technology you can trust</h3>
                     <p className="text-neutral-200 text-base lg:text-lg/[1.625rem] mb-4">
-                        Built on a dedicated global network for low latency and failover protection, with real-time
-                        reporting and reliable redundancy. Bridges supported include PrimeXM and TFB; integrated to MetaTrader 5.
+                    Build on a dedicated global network for low latency and failover protection, with real-time reporting and reliable redundancy. Bridges supported include PrimeXM and various other bridge providers; integrated to MetaTrader 5.
                     </p>
                     <div className="mt-5">
                         <Link href="/technology">
