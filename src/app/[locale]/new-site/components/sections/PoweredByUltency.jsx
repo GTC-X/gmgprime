@@ -1,5 +1,8 @@
 import Link from "next/link";
-import { ULTENCY_TEASER_PARAGRAPHS } from "../../../data/poweredByUltencyContent";
+import {
+  METAQUOTES_ULTENCY_ANNOUNCEMENT_URL,
+  ULTENCY_TEASER_PARAGRAPHS,
+} from "../../../data/poweredByUltencyContent";
 
 export default function PoweredByUltency() {
   return (
@@ -29,12 +32,14 @@ export default function PoweredByUltency() {
                   >
                     Know more about Ultency
                   </Link>
-                  <Link
-                    href="/news/gmg-prime-integrates-metaquotes-ultency-matching-engine"
+                  <a
+                    href={METAQUOTES_ULTENCY_ANNOUNCEMENT_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center rounded-xl px-5 py-3 border border-white/20 text-white font-medium hover:border-accent-400/60 hover:text-accent-400 transition-colors"
                   >
                     Read the announcement
-                  </Link>
+                  </a>
                 </div>
               </div>
 

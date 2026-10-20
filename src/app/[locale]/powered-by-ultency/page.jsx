@@ -2,6 +2,7 @@ import Link from "next/link";
 import NewCommonFooter from "../new-site/components/sections/Footer";
 import UltencyFaqAccordion from "../components/UltencyFaqAccordion";
 import {
+  METAQUOTES_ULTENCY_ANNOUNCEMENT_URL,
   ULTENCY_DETAIL_PARAGRAPHS,
   ULTENCY_HIGHLIGHTS,
 } from "../data/poweredByUltencyContent";
@@ -126,6 +127,23 @@ export default function PoweredByUltencyPage() {
             </div>
             <UltencyFaqAccordion />
           </div>
+        </div>
+      </section>
+
+      <section className="container mx-auto px-4 pb-16 md:pb-20">
+        <div className="flex flex-col items-center gap-4 text-center">
+          <p className="max-w-xl text-neutral-400 text-sm md:text-base">
+            Read MetaQuotes&apos; official release on GMG Prime&apos;s Ultency
+            integration into MetaTrader 5.
+          </p>
+          <a
+            href={METAQUOTES_ULTENCY_ANNOUNCEMENT_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center rounded-xl px-6 py-3 bg-accent-400 text-white font-medium hover:bg-accent-400/80 transition-colors"
+          >
+            Read the announcement
+          </a>
         </div>
       </section>
 

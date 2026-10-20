@@ -1,6 +1,7 @@
 import Link from "next/link";
 import FeatureSlider from "./Slider";
 import CommonButton from "../../../components/CommonButton";
+import { METAQUOTES_ULTENCY_ANNOUNCEMENT_URL } from "../../../data/poweredByUltencyContent";
 
 export default function Hero() {
   const ITEMS = [
@@ -71,12 +72,14 @@ export default function Hero() {
             <CommonButton>Book a call</CommonButton>
             <CommonButton variant="ghost">Request pricing</CommonButton>
           </div>
-          <Link
-            href="/news/gmg-prime-integrates-metaquotes-ultency-matching-engine"
+          <a
+            href={METAQUOTES_ULTENCY_ANNOUNCEMENT_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm font-medium text-accent-400 underline-offset-4 hover:underline"
           >
             Read the announcement
-          </Link>
+          </a>
         </div>
 
         {/* Slider */}

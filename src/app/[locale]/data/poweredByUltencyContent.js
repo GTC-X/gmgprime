@@ -1,3 +1,6 @@
+export const METAQUOTES_ULTENCY_ANNOUNCEMENT_URL =
+  "https://www.metaquotes.net/en/company/news/5512";
+
 export const ULTENCY_TEASER_PARAGRAPHS = [
   "In January 2026 we integrated MetaQuotes' Ultency Matching Engine directly into our MT5 environment. Ultency runs in parallel with our established, high-performance architecture as an alternative way to connect.",
   "Ultency handles aggregation and order matching natively inside MetaTrader 5, which means brokers and institutional clients can reach GMG Prime's liquidity pool with much less reliance on third-party bridges or middleware.",
